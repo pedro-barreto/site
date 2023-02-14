@@ -1,0 +1,57 @@
+header {
+  display: grid;
+  position: sticky;
+  top: 0;
+  grid-template: 1fr / 0.1fr 0.9fr;
+  background-color: white;
+  z-index: 1;
+}
+
+header .logo {
+  display: grid;
+  place-items: center;
+}
+
+header .logo img {
+  width: 80px;
+  height: 80px;
+  transition: 0.5s;
+}
+
+header .navegacao ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .navegacao a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  color: black;
+  transition: 0.2s;
+}
+
+header .navegacao a:hover {
+  background: black;
+  color: white;
+  text-decoration: underline;
+}
+
+@media all and (max-width: 1000px) {
+  header .navegacao a {
+    padding: 0 50px;
+  }
+}
+@media all and (max-width: 830px) {
+  header .navegacao a {
+    padding: 0 30px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  header .navegacao {
+    display: none;
+  }
+}

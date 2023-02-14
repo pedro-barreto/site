@@ -1,0 +1,22 @@
+.cards{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card{
+
+    max-width: 250px;
+    margin: 0 20px 100px;
+    text-align: justify;
+
+}
+
+.card img{
+
+    margin-bottom: 20px;
+    width: 250px;
+
+}

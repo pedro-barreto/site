@@ -1,0 +1,16 @@
+.conteudo h1 {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.conteudo .slider {
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.conteudo .slider img{
+
+  width: 100%;
+  height: 100%;
+
+}
