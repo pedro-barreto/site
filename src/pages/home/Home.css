@@ -1,15 +1,15 @@
-.conteudo {
-  padding-bottom: 200px;
+.home {
+  padding-bottom: 100px;
 }
-.conteudo h1 {
+.home h1 {
   padding: 100px 0;
   text-align: center;
 }
-.conteudo .slider {
+.home .slider {
   width: 100%;
   height: calc(100vh - 80px);
 }
-.conteudo .slider img {
+.home .slider img {
   width: 100%;
   height: 100%;
   object-fit: cover;

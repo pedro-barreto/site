@@ -10,3 +10,6 @@ body {
   background-color: black;
   color: white;
 }
+img {
+  display: flex;
+}

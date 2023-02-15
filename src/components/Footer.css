@@ -12,6 +12,11 @@ footer ul {
 }
 footer ul li {
   margin: 10px;
+  transition: 0.5s;
+}
+footer ul li:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 footer ul li a {
   color: black;

@@ -15,43 +15,43 @@ function Footer() {
     <footer>
       <ul>
         <li>
-          <Link to={"/"}>
+          <Link>
             <FaTwitter />
             Twitter
           </Link>
         </li>
         <li>
-          <Link to={"/"}>
+          <Link>
             <FaInstagram />
             Instagram
           </Link>
         </li>
         <li>
-          <Link to={"/"}>
+          <Link>
             <FaGoogle />
             E-mail
           </Link>
         </li>
         <li>
-          <Link to={"/"}>
+          <Link>
             <FaLinkedin />
             Linkedin
           </Link>
         </li>
         <li>
-          <Link to={"/"}>
+          <Link>
             <FaFacebook />
             Facebook
           </Link>
         </li>
         <li>
-          <Link to={"/"}>
+          <Link>
             <FaGithub />
             Github
           </Link>
         </li>
         <li>
-          <Link to={"/"}>
+          <Link>
             <FaWhatsapp />
             Whatsapp
           </Link>

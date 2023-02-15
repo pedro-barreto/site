@@ -6,25 +6,29 @@
 }
 .card {
   max-width: 250px;
-  background-color: white;
-  color: black;
   display: grid;
   place-items: center;
-  text-align: center;
   margin: 0 20px 50px;
-  padding: 20px;
-  border-radius: 10px;
+  text-align: center;
 }
 .card img {
-  width: 200px;
+  width: 250px;
+}
+.card img,
+.card details {
+  background-color: white;
+  color: black;
+  padding: 10px;
 }
 .card details summary {
-  margin-top: 20px;
   cursor: pointer;
 }
-.card details summary svg {
-  margin-right: 5px;
+.card details p:last-child {
+  margin-top: 10px;
 }
-.card details p {
-  margin-top: 20px;
+.card details p svg {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  position: relative;
+  top: 3px;
 }
