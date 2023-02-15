@@ -1,10 +1,17 @@
 import "./Card.css";
+import { FaArrowDown } from "react-icons/fa";
 
 function Card({ texto, imagem }) {
   return (
     <div className="card">
       <img src={imagem} alt="Card" />
-      <p>{texto}</p>
+      <details>
+        <summary>
+          <FaArrowDown />
+          Titulo-Card
+        </summary>
+        <p>{texto}</p>
+      </details>
     </div>
   );
 }

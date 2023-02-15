@@ -76,7 +76,7 @@ function Home() {
           <Card
             texto={texto}
             imagem={
-              "https://cdn.shopify.com/s/files/1/0068/0042/products/studio-ghibli-records-joe-hisaishi-ponyo-on-the-cliff-by-the-sea-image-album-obi-strip-lp-lp-4988008088519-sghi10031-1-photo-photo-photo-28213217329335_250x.jpg?v=1615882025"
+              "https://images.8tracks.com/cover/i/012/196/028/b59dda314520d3f2f49c77299f569f5d--miyazaki-film-howls-moving-castle-8950.jpg?rect=0,23,500,500&q=98&fm=jpg&fit=max"
             }
           />
           <Card
@@ -94,7 +94,19 @@ function Home() {
           <Card
             texto={texto}
             imagem={
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6s-kllDkdBeYXC0RWUIvnyjsz1RjeEMnVw&usqp=CAU"
+              "https://tricycle.org/wp-content/uploads/2020/10/studio-ghibli-spirituality-300x300.jpg"
+            }
+          />
+          <Card
+            texto={texto}
+            imagem={
+              "https://i.pinimg.com/564x/5c/6b/10/5c6b106d5fb5c9563a25cd02ba05005f.jpg"
+            }
+          />
+          <Card
+            texto={texto}
+            imagem={
+              "https://pbs.twimg.com/profile_images/1082043506179391492/UvgtTLuz_400x400.jpg"
             }
           />
         </div>

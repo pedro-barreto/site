@@ -2,28 +2,24 @@ header {
   display: grid;
   position: sticky;
   top: 0;
-  grid-template: 1fr / 0.1fr 0.9fr;
+  grid-template: 1fr / 0.1fr 1fr;
   background-color: white;
   z-index: 1;
 }
-
 header .logo {
   display: grid;
   place-items: center;
 }
-
 header .logo img {
   width: 80px;
   height: 80px;
   transition: 0.5s;
 }
-
 header .navegacao ul {
   height: 100%;
   display: flex;
   justify-content: flex-end;
 }
-
 header .navegacao a {
   height: 100%;
   display: flex;
@@ -32,13 +28,15 @@ header .navegacao a {
   color: black;
   transition: 0.2s;
 }
-
 header .navegacao a:hover {
   background: black;
   color: white;
   text-decoration: underline;
 }
-
+header .navegacao #hamburguer {
+  font-size: 2rem;
+  display: none;
+}
 @media all and (max-width: 1000px) {
   header .navegacao a {
     padding: 0 50px;
@@ -49,9 +47,11 @@ header .navegacao a:hover {
     padding: 0 30px;
   }
 }
-
 @media all and (max-width: 650px) {
-  header .navegacao {
+  header .navegacao a:not(:last-child) {
     display: none;
+  }
+  header .navegacao #hamburguer {
+    display: flex;
   }
 }

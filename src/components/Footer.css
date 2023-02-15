@@ -2,8 +2,24 @@ footer {
   padding: 30px 0;
   background-color: white;
   color: black;
+  display: grid;
+  place-items: center;
 }
-
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+footer ul li {
+  margin: 10px;
+}
+footer ul li a {
+  color: black;
+}
+footer ul li svg {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
 footer p {
-  text-align: center;
+  padding-top: 50px;
 }

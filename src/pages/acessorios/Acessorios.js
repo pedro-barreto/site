@@ -1,7 +1,5 @@
-function Acessorios(){
-
-    return <h1>Acessorios</h1>
-
+function Acessorios() {
+  return <h1>Acessorios</h1>;
 }
 
-export default Acessorios
+export default Acessorios;

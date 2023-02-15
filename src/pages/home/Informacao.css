@@ -5,58 +5,44 @@
   padding: 150px 100px;
   border-bottom: 1px white solid;
 }
-
 .informacao:first-of-type {
   padding-top: 0;
 }
-
 .informacao:nth-child(odd) {
   flex-direction: row-reverse;
 }
-
 .informacao .texto,
 .informacao .imagem {
   padding: 0 50px;
 }
-
 .informacao .texto p {
   margin-top: 20px;
   text-align: justify;
 }
-
 .informacao .imagem img {
   width: 300px;
   transition: 0.5s;
 }
-
 .informacao .imagem img:hover {
   transform: scale(1.3);
 }
-
 @media all and (max-width: 1000px) {
   .informacao,
   .informacao:nth-child(odd) {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
-
   .informacao .imagem img {
     margin-bottom: 50px;
   }
 }
-
 @media all and (max-width: 800px) {
   .informacao .imagem img {
     width: 200px;
   }
 }
-
-@media all and (max-width: 700px){
-
+@media all and (max-width: 700px) {
   .informacao {
-
     padding: 100px 0;
-
   }
-
 }
