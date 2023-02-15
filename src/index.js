@@ -17,10 +17,10 @@ root.render(
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/jogos" element={<Jogos />}></Route>
-          <Route path="/acessorios" element={<Acessorios />}></Route>
-          <Route path="/sobre" element={<Sobre />}></Route>
+          <Route path="/site/" element={<Home />}></Route>
+          <Route path="/site/jogos" element={<Jogos />}></Route>
+          <Route path="/site/acessorios" element={<Acessorios />}></Route>
+          <Route path="/site/sobre" element={<Sobre />}></Route>
         </Routes>
       </main>
       <Footer />

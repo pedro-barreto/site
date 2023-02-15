@@ -13,16 +13,16 @@ function Header() {
 
       <div className="navegacao">
         <ul>
-          <Link to="/">
+          <Link to="/site/">
             <li>Home</li>
           </Link>
-          <Link to="/jogos">
+          <Link to="/site/jogos">
             <li>Jogos</li>
           </Link>
-          <Link to="/acessorios">
+          <Link to="/site/acessorios">
             <li>Acessórios</li>
           </Link>
-          <Link to="/sobre">
+          <Link to="/site/sobre">
             <li>Sobre nós</li>
           </Link>
         </ul>
