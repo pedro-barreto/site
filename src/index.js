@@ -8,6 +8,7 @@ import Acessorios from "./pages/acessorios/Acessorios";
 import Sobre from "./pages/sobre/Sobre";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import NotFound from "./pages/404/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,10 +17,11 @@ root.render(
       <Header />
       <main>
         <Routes>
-          <Route path="site/" element={<Home />}></Route>
-          <Route path="site/jogos" element={<Jogos />}></Route>
-          <Route path="site/acessorios" element={<Acessorios />}></Route>
-          <Route path="site/sobre" element={<Sobre />}></Route>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/jogos" element={<Jogos />} />
+          <Route path="/acessorios" element={<Acessorios />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

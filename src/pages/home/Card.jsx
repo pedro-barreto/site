@@ -7,12 +7,10 @@ function Card({ titulo, texto, imagem }) {
       <details>
         <summary>
           <img src={imagem} alt="Card" />
-          {
-            <p>
-              <FaChevronDown />
-              {titulo}
-            </p>
-          }
+          <h3>
+            <FaChevronDown />
+            {titulo}
+          </h3>
         </summary>
         <p>{texto}</p>
       </details>

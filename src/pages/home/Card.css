@@ -7,7 +7,7 @@
 .card {
   max-width: 250px;
   display: grid;
-  place-items: center;
+  place-items: start;
   margin: 0 20px 50px;
   text-align: center;
 }
@@ -23,12 +23,24 @@
 .card details summary {
   cursor: pointer;
 }
-.card details p:last-child {
+.card details summary h3 {
+  font-size: 1rem;
+}
+.card details p {
   margin-top: 10px;
 }
-.card details p svg {
+.card details h3 svg {
   font-size: 1.2rem;
   margin-right: 5px;
   position: relative;
   top: 3px;
+}
+.card details:not([open]) {
+  align-items: flex-start;
+}
+
+@media all and (max-width: 320px) {
+  .card details summary img {
+    width: 200px;
+  }
 }

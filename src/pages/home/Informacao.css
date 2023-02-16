@@ -10,17 +10,24 @@
 }
 .informacao:nth-child(odd) {
   flex-direction: row-reverse;
+  text-align: right;
+}
+.informacao:nth-child(odd) p {
+  text-align: left;
 }
 .informacao .texto,
 .informacao .imagem {
   padding: 0 50px;
 }
+.informacao .texto h2 {
+  border-bottom: 1px white solid;
+  padding-bottom: 10px;
+}
 .informacao .texto p {
   margin-top: 20px;
-  text-align: justify;
 }
 .informacao .imagem img {
-  width: 300px;
+  max-width: 300px;
   transition: 0.5s;
 }
 .informacao .imagem img:hover {
@@ -30,7 +37,10 @@
   .informacao,
   .informacao:nth-child(odd) {
     flex-direction: column-reverse;
-    flex-wrap: wrap;
+    text-align: center;
+  }
+  .informacao:nth-child(odd) .texto p {
+    text-align: center;
   }
   .informacao .imagem img {
     margin-bottom: 50px;
@@ -44,5 +54,26 @@
 @media all and (max-width: 700px) {
   .informacao {
     padding: 100px 0;
+  }
+}
+@media all and (max-width: 500px) {
+  .informacao p {
+    font-size: 0.9rem;
+  }
+}
+@media all and (max-width: 400px) {
+  .informacao p {
+    font-size: 0.8rem;
+  }
+}
+@media all and (max-width: 320px) {
+  .informacao .imagem img {
+    width: 150px;
+  }
+  .informacao h2 {
+    font-size: 1.1rem;
+  }
+  .informacao p {
+    font-size: 0.6rem;
   }
 }

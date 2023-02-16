@@ -5,26 +5,25 @@ import { GiHamburgerMenu } from "react-icons/gi";
 function Header() {
   return (
     <header>
-      <Link to="site/" className="logo">
+      <Link to="/" className="logo">
         <img
           src="https://styles.redditmedia.com/t5_quz5p/styles/profileIcon_eq31ro3kejw11.jpg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=7089cc5f089b78916ee824dbae601e9a9e04e031"
           alt="Logo"
         />
       </Link>
-
-      <div className="navegacao">
+      <nav>
         <ul>
-          <Link to="site/">
-            <li>Home</li>
+          <Link to="/">
+            <li>HOME</li>
           </Link>
-          <Link to="site/jogos">
-            <li>Jogos</li>
+          <Link to="/jogos">
+            <li>JOGOS</li>
           </Link>
-          <Link to="site/acessorios">
-            <li>Acessórios</li>
+          <Link to="/acessorios">
+            <li>ACESSÓRIOS</li>
           </Link>
-          <Link to="site/sobre">
-            <li>Sobre nós</li>
+          <Link to="/sobre">
+            <li>SOBRE</li>
           </Link>
           <Link id="hamburguer">
             <li>
@@ -32,7 +31,7 @@ function Header() {
             </li>
           </Link>
         </ul>
-      </div>
+      </nav>
     </header>
   );
 }

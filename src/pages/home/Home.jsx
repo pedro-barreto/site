@@ -1,6 +1,6 @@
 import "./Home.css";
 import Informacao from "./Informacao";
-import Card from "../../components/Card";
+import Card from "./Card";
 
 function Home() {
   const texto =
@@ -17,7 +17,7 @@ function Home() {
       </div>
       <div className="informacoes">
 
-        <h1>Informações sobre o Studio Ghibli</h1>
+        <h1>INFORMAÇÕES STUDIO GHIBLI</h1>
 
         <Informacao
           titulo="Titulo 1"
@@ -46,7 +46,7 @@ function Home() {
       </div>
       <div className="cards-menu">
         <div className="titulo">
-          <h1>Cards sobre o Studio Ghibli</h1>
+          <h1>CARDS SOBRE O STUDIO GHIBLI</h1>
         </div>
         <div className="cards">
           <Card
