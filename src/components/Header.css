@@ -27,7 +27,7 @@ header nav a {
   padding: 0 80px;
   color: black;
   transition: 0.2s;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.1rem;
 }
 header nav a:hover {
@@ -36,9 +36,50 @@ header nav a:hover {
   text-decoration: underline;
   letter-spacing: 3px;
 }
-header nav #hamburguer {
-  font-size: 2rem;
+header nav li:last-child {
   display: none;
+}
+header nav svg {
+  font-size: 40px;
+}
+
+.hamburguerOpen {
+  height: 100vh;
+  display: flex;
+  animation: openHamburguer 300ms ease-in-out;
+}
+.hamburguerOpen .logo {
+  display: none;
+}
+.hamburguerOpen nav ul {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.hamburguerOpen nav ul li {
+  display: flex !important;
+  order: 2;
+}
+.hamburguerOpen nav ul li:hover {
+  letter-spacing: 0;
+}
+.hamburguerOpen li:last-child {
+  order: 1;
+  height: 80px;
+}
+.hamburguerOpen ul li a {
+  font-size: 3rem;
+  padding: 5vh 0;
+  width: 100vw;
+  justify-content: center;
+}
+@keyframes openHamburguer {
+  from {
+    transform: translateX(110vh);
+  }
+  top {
+    transform: translateX(0vh);
+  }
 }
 @media all and (max-width: 1000px) {
   header nav a {
@@ -51,10 +92,16 @@ header nav #hamburguer {
   }
 }
 @media all and (max-width: 650px) {
-  header nav a:not(:last-child) {
+  header nav li:not(:last-child) {
     display: none;
   }
-  header nav #hamburguer {
+  header nav li:last-child,
+  .cross {
     display: flex;
+  }
+}
+@media all and (max-width: 350px) {
+  .hamburguerOpen ul li a {
+    font-size: 2rem !important;
   }
 }
