@@ -54,7 +54,8 @@ header nav svg {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(110vw);
+  transform: translateY(-110vh);
+  visibility: hidden;
 }
 .hamburguerMenu ul {
   display: flex;
@@ -81,18 +82,22 @@ header nav svg {
 }
 @keyframes open {
   from {
-    transform: translateX(110vw);
+    transform: translateY(-110vh);
+    visibility: visible;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
+    visibility: visible;
   }
 }
 @keyframes close {
   from {
-    transform: translateX(0);
+    transform: translateY(0);
+    visibility: visible;
   }
   to {
-    transform: translateX(110vw);
+    transform: translateY(-110vh);
+    visibility: hidden;
   }
 }
 @media all and (max-width: 1000px) {
