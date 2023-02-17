@@ -24,13 +24,13 @@ header nav a {
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 80px;
+  justify-content: center;
   color: black;
   transition: 0.2s;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
-header nav a:hover {
+header nav:first-of-type a:hover {
   background: black;
   color: white;
   text-decoration: underline;
@@ -39,46 +39,60 @@ header nav a:hover {
 header nav li:last-child {
   display: none;
 }
+header nav:first-of-type li:not(:last-child) {
+  width: 100%;
+}
 header nav svg {
   font-size: 40px;
 }
 
-.hamburguerOpen {
+.hamburguerMenu {
+  width: 100vw;
   height: 100vh;
-  display: flex;
-  animation: openHamburguer 300ms ease-in-out;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(110vw);
 }
-.hamburguerOpen .logo {
-  display: none;
-}
-.hamburguerOpen nav ul {
+.hamburguerMenu ul {
   display: flex;
   flex-direction: column;
-  height: auto;
 }
-.hamburguerOpen nav ul li {
-  display: flex !important;
+.hamburguerMenu li {
   order: 2;
+  height: 100vh;
 }
-.hamburguerOpen nav ul li:hover {
-  letter-spacing: 0;
-}
-.hamburguerOpen li:last-child {
-  order: 1;
-  height: 80px;
-}
-.hamburguerOpen ul li a {
+.hamburguerMenu a {
   font-size: 3rem;
-  padding: 5vh 0;
   width: 100vw;
   justify-content: center;
 }
-@keyframes openHamburguer {
+.hamburguerMenu li:last-child {
+  order: 1;
+  display: flex;
+}
+.hamburguerOpen .hamburguerMenu {
+  animation: open 0.2s linear forwards;
+}
+.hamburguerClose .hamburguerMenu {
+  animation: close 0.2s linear forwards;
+}
+@keyframes open {
   from {
-    transform: translateX(110vh);
+    transform: translateX(110vw);
   }
-  top {
-    transform: translateX(0vh);
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes close {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(110vw);
   }
 }
 @media all and (max-width: 1000px) {
@@ -92,16 +106,15 @@ header nav svg {
   }
 }
 @media all and (max-width: 650px) {
-  header nav li:not(:last-child) {
+  header nav:first-of-type li:not(:last-child) {
     display: none;
   }
-  header nav li:last-child,
-  .cross {
+  header nav li:last-child {
     display: flex;
   }
 }
 @media all and (max-width: 350px) {
-  .hamburguerOpen ul li a {
-    font-size: 2rem !important;
+  .hamburguerMenu a {
+    font-size: 2.4rem;
   }
 }
