@@ -5,15 +5,23 @@ import { ImCross } from "react-icons/im";
 import { useState } from "react";
 
 function Header() {
-  const corpo = document.body
+  const corpo = document.body;
   const [active, setActive] = useState(false);
+  const [ajuste, setAjuste] = useState(false);
   const checkHambur = () => {
     setActive(!active);
-    active ? corpo.style.overflowY = 'auto' : corpo.style.overflow = 'hidden'
+    setAjuste(true);
+    active
+      ? (corpo.style.overflowY = "auto")
+      : (corpo.style.overflow = "hidden");
   };
 
   return (
-    <header className={active ? "hamburguerOpen" : "hamburguerClose"}>
+    <header
+      className={
+        ajuste ? (active ? "hamburguerOpen" : "hamburguerClose") : null
+      }
+    >
       <Link to="site/" className="logo">
         <img
           src="https://styles.redditmedia.com/t5_quz5p/styles/profileIcon_eq31ro3kejw11.jpg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=7089cc5f089b78916ee824dbae601e9a9e04e031"
