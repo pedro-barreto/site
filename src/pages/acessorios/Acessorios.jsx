@@ -1,9 +1,13 @@
-import './Acessorios.css'
+import Aside from "../../components/Aside";
+import "./Acessorios.css";
 
 export default function Acessorios() {
   return (
     <div className="acessorios">
-      <h1>ACESSÓRIOS</h1>
+      <Aside tituloAside={"Link sobre acessorios"} />
+      <div className="conteudo">
+        <h1>JOGOS</h1>
+      </div>
     </div>
   );
 }

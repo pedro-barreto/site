@@ -21,7 +21,7 @@ root.render(
           <Route path="site/jogos" element={<Jogos />} />
           <Route path="site/acessorios" element={<Acessorios />} />
           <Route path="site/sobre" element={<Sobre />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="site/*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

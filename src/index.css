@@ -10,7 +10,7 @@
 body {
   background-color: black;
   color: white;
-  overflow-x: hidden !important;
+  margin-top: 80px;
 }
 img {
   display: flex;
