@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { useState } from "react";
 
-function Header() {
+export default function Header() {
   const corpo = document.body;
   const [active, setActive] = useState(false);
   const [ajuste, setAjuste] = useState(false);
@@ -81,5 +81,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

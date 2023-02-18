@@ -20,17 +20,17 @@
   color: black;
   padding: 10px;
 }
-.card details summary {
+.card summary {
   cursor: pointer;
 }
-.card details summary h3 {
+.card h3 {
   font-size: 1rem;
 }
-.card details p {
+.card p {
   margin-top: 10px;
   text-align: justify;
 }
-.card details h3 svg {
+.card svg {
   font-size: 1.2rem;
   margin-right: 5px;
   position: relative;
@@ -40,13 +40,13 @@
   align-items: flex-start;
 }
 @media all and (max-width: 880px) {
-  .card img, .card{
+  .card img,
+  .card {
     max-width: 200px;
   }
 }
 @media all and (max-width: 560px) {
-
-  .card details p{
+  .card details p {
     font-size: 0.85rem;
   }
 }

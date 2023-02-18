@@ -8,9 +8,9 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer>
       <ul>
@@ -57,9 +57,7 @@ function Footer() {
           </Link>
         </li>
       </ul>
-      <p>Site desenvolvido por Pedro B. - {new Date().getFullYear()}</p>
+      <p>Site desenvolvido por Pedro B. &copy; {new Date().getFullYear()}</p>
     </footer>
   );
 }
-
-export default Footer;

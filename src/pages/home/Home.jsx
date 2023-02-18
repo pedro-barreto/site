@@ -16,7 +16,6 @@ function Home() {
         />
       </div>
       <div className="informacoes">
-
         <h1>INFORMAÇÕES STUDIO GHIBLI</h1>
 
         <Informacao
@@ -95,7 +94,7 @@ function Home() {
             titulo={"Titulo 7"}
             texto={texto}
             imagem={
-              "https://cdn.animenewsnetwork.com/thumbnails/max300x600/cms/news.2/146975/wind.jpg"
+              "https://64.media.tumblr.com/1a949d465cdd1ad084fa8671cdfed059/c4a65213c8a316a8-c7/s250x400/1bdb66baa1480d4ed7e2a0ec0a2c404657290e4b.jpg"
             }
           />
           <Card
@@ -116,7 +115,7 @@ function Home() {
             titulo={"Titulo 10"}
             texto={texto}
             imagem={
-              "https://pbs.twimg.com/profile_images/1082043506179391492/UvgtTLuz_400x400.jpg"
+              "https://i.pinimg.com/474x/ff/42/65/ff4265d5425204c3a03a298f39ff8366.jpg"
             }
           />
           <Card

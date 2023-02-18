@@ -1,7 +1,7 @@
 import "./Card.css";
 import { FaChevronDown } from "react-icons/fa";
 
-function Card({ titulo, texto, imagem }) {
+export default function Card({ titulo, texto, imagem }) {
   return (
     <div className="card">
       <details>
@@ -17,5 +17,3 @@ function Card({ titulo, texto, imagem }) {
     </div>
   );
 }
-
-export default Card;

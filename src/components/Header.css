@@ -15,7 +15,7 @@ header .logo img {
   height: 80px;
   transition: 0.5s;
 }
-header nav ul {
+header ul {
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -36,16 +36,15 @@ header nav:first-of-type a:hover {
   text-decoration: underline;
   letter-spacing: 3px;
 }
-header nav li:last-child {
+header li:last-child {
   display: none;
 }
 header nav:first-of-type li:not(:last-child) {
   width: 100%;
 }
-header nav svg {
+header svg {
   font-size: 40px;
 }
-
 .hamburguerMenu {
   width: 100vw;
   height: 100vh;
@@ -73,7 +72,7 @@ header nav svg {
   order: 1;
   display: flex;
 }
-.hamburguerMenu li svg{
+.hamburguerMenu svg {
   color: rgb(220, 0, 0);
 }
 .hamburguerOpen .hamburguerMenu {
@@ -112,7 +111,7 @@ header nav svg {
   header nav:first-of-type li:not(:last-child) {
     display: none;
   }
-  header nav li:last-child {
+  header li:last-child {
     display: flex;
   }
 }

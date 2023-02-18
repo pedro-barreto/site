@@ -1,6 +1,6 @@
 import "./Informacao.css";
 
-function Informacao({ titulo, link }) {
+export default function Informacao({ titulo, link }) {
   return (
     <div className="informacao">
       <div className="texto">
@@ -24,5 +24,3 @@ function Informacao({ titulo, link }) {
     </div>
   );
 }
-
-export default Informacao;
