@@ -57,7 +57,7 @@ export default function Footer() {
           </Link>
         </li>
       </ul>
-      <p>Site desenvolvido por Pedro B. &copy; {new Date().getFullYear()}</p>
+      <p >Site desenvolvido por <span title="Opa! 😎👍">Pedro B.</span> &copy; {new Date().getFullYear()}</p>
     </footer>
   );
 }

@@ -2,20 +2,18 @@ header {
   display: grid;
   position: fixed;
   top: 0;
-  grid-template: 1fr / 0.2fr 0.8fr;
+  grid-template: 1fr / 20% 80%;
   background-color: white;
   z-index: 2;
   width: 100%;
   border-bottom: 1px black solid;
 }
-header .logo {
+.logo {
   display: grid;
   place-items: center;
 }
-header .logo img {
-  width: 80px;
-  height: 80px;
-  transition: 0.5s;
+.logo img {
+  max-width: 80px;
 }
 header ul {
   height: 100%;
@@ -101,12 +99,12 @@ header svg {
 }
 @media all and (max-width: 1000px) {
   header nav a {
-    padding: 0 50px !important;
+    padding: 0 40px !important;
   }
 }
 @media all and (max-width: 830px) {
   header nav a {
-    padding: 0 30px !important;
+    padding: 0 20px !important;
   }
 }
 @media all and (max-width: 650px) {

@@ -36,6 +36,11 @@ footer p {
   }
 }
 @media all and (max-width: 250px) {
+  footer ul{
+
+    padding: 0 !important;
+
+  }
   footer p,
   footer a {
     font-size: 0.7rem;
