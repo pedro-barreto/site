@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <ul>
         <li>
-          <Link to={"https://github.com/pedro-barreto"}>
+          <Link to={"https://github.com/pedro-barreto"} target={"_blank"}>
             <FaGithub />
             Github
           </Link>

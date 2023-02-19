@@ -48,7 +48,8 @@ header svg {
 }
 .hamburguerMenu {
   width: 100%;
-  height: calc(100vh - env(safe-area-inset-bottom));
+  height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom);
   background-color: white;
   color: black;
   position: absolute;

@@ -2,7 +2,8 @@
   margin-top: 80px;
 }
 .slide img {
-  height: calc(100vh - env(safe-area-inset-bottom) - 80px);
+  height: calc(100vh - 80px);
+  padding-bottom: env(safe-area-inset-bottom);
   object-fit: cover;
   object-position: center;
 }
