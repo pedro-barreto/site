@@ -9,6 +9,7 @@ import Sobre from "./pages/sobre/Sobre";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NotFound from "./pages/404/NotFound";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

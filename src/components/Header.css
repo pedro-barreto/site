@@ -11,6 +11,7 @@ header {
 .logo {
   display: grid;
   place-items: center;
+  min-width: 80px;
 }
 .logo img {
   max-width: 80px;

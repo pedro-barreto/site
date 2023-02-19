@@ -7,27 +7,21 @@ footer {
 }
 footer ul {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 50px 20px !important;
-  border-bottom: 1px black solid;
+  justify-content: center;
 }
 footer li {
   margin: 10px auto !important;
   transition: 0.5s;
 }
 footer li:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 footer a {
   color: black;
 }
 footer svg {
-  margin: 0 5px 0 20px !important;
+  margin: 0 5px 5px !important;
   font-size: 1.2rem;
-}
-footer p {
-  padding-top: 30px !important;
-  font-weight: 800;
 }
 @media all and (max-width: 300px) {
   footer p,
@@ -36,11 +30,6 @@ footer p {
   }
 }
 @media all and (max-width: 250px) {
-  footer ul{
-
-    padding: 0 !important;
-
-  }
   footer p,
   footer a {
     font-size: 0.7rem;

@@ -1,13 +1,5 @@
 import "./Footer.css";
-import {
-  FaFacebook,
-  FaGithub,
-  FaGoogle,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -15,49 +7,16 @@ export default function Footer() {
     <footer>
       <ul>
         <li>
-          <Link>
-            <FaTwitter />
-            Twitter
-          </Link>
-        </li>
-        <li>
-          <Link>
-            <FaInstagram />
-            Instagram
-          </Link>
-        </li>
-        <li>
-          <Link>
-            <FaGoogle />
-            E-mail
-          </Link>
-        </li>
-        <li>
-          <Link>
-            <FaLinkedin />
-            Linkedin
-          </Link>
-        </li>
-        <li>
-          <Link>
-            <FaFacebook />
-            Facebook
-          </Link>
-        </li>
-        <li>
-          <Link>
+          <Link to={"https://github.com/pedro-barreto"}>
             <FaGithub />
             Github
           </Link>
         </li>
-        <li>
-          <Link>
-            <FaWhatsapp />
-            Whatsapp
-          </Link>
-        </li>
       </ul>
-      <p >Site desenvolvido por <span title="Opa! 😎👍">Pedro B.</span> &copy; {new Date().getFullYear()}</p>
+      <p>
+        Site desenvolvido por <span title="Opa! 😎👍">Pedro B.</span> &copy;{" "}
+        {new Date().getFullYear()}
+      </p>
     </footer>
   );
 }

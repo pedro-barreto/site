@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
-import "bootstrap/dist/css/bootstrap.min.css";
 import './Slide.css'
+
 export default function Slide() {
   return (
     <Carousel pause={false}>
