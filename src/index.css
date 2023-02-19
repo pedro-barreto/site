@@ -1,17 +1,17 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  list-style-type: none;
-  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400 !important;
+  list-style-type: none !important;
+  text-decoration: none !important;
 }
 body {
-  background-color: black;
-  color: white;
-  margin-top: 80px;
+  background-color: black !important;
+  color: white !important;
+  margin-top: 80px !important;
 }
 img {
-  display: flex;
+  display: flex !important;
 }

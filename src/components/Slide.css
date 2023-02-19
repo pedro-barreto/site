@@ -1,0 +1,40 @@
+
+.slide {
+    margin-top: 80px;
+  }
+  .slide img {
+    height: calc(100vh - 80px);
+    object-fit: cover;
+    object-position: center;
+  }
+  .slide span {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 30%;
+  }
+  .slide h3,
+  .slide p {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    );
+    
+  }
+  .slide p{
+    margin-bottom: 35px;
+  }
+  .slide .carousel-indicators {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
+  }
+  .slide button {
+    padding: 50px;
+  }

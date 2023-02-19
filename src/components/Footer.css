@@ -1,5 +1,5 @@
 footer {
-  padding: 30px 0;
+  padding: 30px 0 !important;
   background-color: white;
   color: black;
   display: grid;
@@ -8,27 +8,25 @@ footer {
 footer ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 50px;
+  padding: 0 50px 20px !important;
+  border-bottom: 1px black solid;
 }
 footer li {
-  margin: 10px auto;
+  margin: 10px auto !important;
   transition: 0.5s;
 }
 footer li:hover {
   transform: scale(1.1);
-  text-decoration: underline;
 }
 footer a {
   color: black;
 }
 footer svg {
-  margin: 0 5px 0 20px;
+  margin: 0 5px 0 20px !important;
   font-size: 1.2rem;
-  position: relative;
-  top: 3px;
 }
 footer p {
-  padding-top: 30px;
+  padding-top: 30px !important;
   font-weight: 800;
 }
 @media all and (max-width: 300px) {

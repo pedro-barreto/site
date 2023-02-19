@@ -1,52 +1,50 @@
-.cards {
+.cartoes {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin: auto !important;
   justify-content: center;
 }
-.card {
+.cartao {
   max-width: 250px;
   display: grid;
   place-items: start;
-  margin: 0 20px 50px;
+  margin: 0 20px 50px !important;
   text-align: center;
 }
-.card img {
+.cartao img {
   max-width: 250px;
 }
-.card img,
-.card details {
+.cartao img,
+.cartao details {
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 10px !important;
 }
-.card summary {
+.cartao summary {
   cursor: pointer;
 }
-.card h3 {
+.cartao h3 {
   font-size: 1rem;
 }
-.card p {
-  margin-top: 10px;
+.cartao p {
+  margin-top: 10px !important;
   text-align: justify;
 }
-.card svg {
+.cartao svg {
   font-size: 1.2rem;
-  margin-right: 5px;
-  position: relative;
-  top: 3px;
+  margin-right: 5px !important;
 }
-.card details:not([open]) {
+.cartao details:not([open]) {
   align-items: flex-start;
 }
 @media all and (max-width: 880px) {
-  .card img,
-  .card {
+  .cartao img,
+  .cartao {
     max-width: 200px;
   }
 }
 @media all and (max-width: 560px) {
-  .card details p {
+  .cartao details p {
     font-size: 0.85rem;
   }
 }

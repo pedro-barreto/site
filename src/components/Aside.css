@@ -5,20 +5,25 @@ aside {
   color: black;
   border-bottom: 1px black solid;
   text-align: center;
+  
 }
 aside h3 {
-  padding: 15px 0;
+  padding: 15px 0 !important;
   width: 60%;
   border-bottom: 1px black solid;
-  margin: auto;
+  margin: auto !important;
 }
 aside ul {
   display: flex;
   flex-direction: column;
+  padding: 0 !important;
 }
 aside li {
-  padding: 20px 0;
+  padding: 20px 0 !important;
   transition: 400ms;
+}
+aside a{
+  color: black;
 }
 aside li:hover {
   background-color: rgb(100, 100, 100);

@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 150px 100px;
+  padding: 150px 100px !important;
   border-bottom: 1px white solid;
 }
 .informacao:first-of-type {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .informacao:nth-child(odd) {
   flex-direction: row-reverse;
@@ -17,14 +17,14 @@
 }
 .informacao .texto,
 .informacao .imagem {
-  padding: 0 50px;
+  padding: 0 50px !important;
 }
 .informacao .texto h2 {
   border-bottom: 1px white solid;
-  padding-bottom: 10px;
+  padding-bottom: 10px !important;
 }
 .informacao .texto p {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 .informacao .imagem img {
   max-width: 300px;
@@ -43,7 +43,7 @@
     text-align: center;
   }
   .informacao .imagem img {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 }
 @media all and (max-width: 800px) {
@@ -53,7 +53,7 @@
 }
 @media all and (max-width: 700px) {
   .informacao {
-    padding: 100px 0;
+    padding: 100px 0 !important;
   }
 }
 @media all and (max-width: 500px) {

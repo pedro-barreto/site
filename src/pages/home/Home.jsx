@@ -1,6 +1,7 @@
 import "./Home.css";
 import Informacao from "./Informacao";
-import Card from "./Card";
+import Cartao from "./Cartao";
+import Slide from "../../components/Slide";
 
 function Home() {
   const texto =
@@ -8,12 +9,8 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="slider">
-        <img
-          src="https://i0.wp.com/www.fatosdesconhecidos.com.br/wp-content/uploads/2019/02/totoro.jpg?fit=1920%2C1080&ssl=1"
-          alt="Imagem inicio"
-          className="introducao"
-        />
+      <div className="slide">
+        <Slide />
       </div>
       <div className="informacoes">
         <h1>INFORMAÇÕES STUDIO GHIBLI</h1>
@@ -43,89 +40,89 @@ function Home() {
           link="https://i.pinimg.com/originals/99/ea/6d/99ea6d9f121d25ec135e4a2f7a599f29.jpg"
         />
       </div>
-      <div className="cards-menu">
+      <div className="cartoes-menu">
         <div className="titulo">
-          <h1>CARDS SOBRE O STUDIO GHIBLI</h1>
+          <h1>CARTÕES SOBRE O STUDIO GHIBLI</h1>
         </div>
-        <div className="cards">
-          <Card
+        <div className="cartoes">
+          <Cartao
             titulo={"Titulo 1"}
             texto={texto}
             imagem={
               "https://www.filmmusicsite.com/images/covers/normal/80907.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 2"}
             texto={texto}
             imagem={
               "https://www.filmmusicsite.com/images/covers/normal/80870.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 3"}
             texto={texto}
             imagem={
               "https://preview.redd.it/vv1yxxaimze11.jpg?auto=webp&s=1bfc6517dbeed878afd678b4429767b0c81329e9"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 4"}
             texto={texto}
             imagem={
               "https://64.media.tumblr.com/d8adca2eae42f5755e27e2aca69ceb1a/c4a65213c8a316a8-2a/s250x400/75b562c6353e355e169891e91d0ddd43ed48ac3f.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 5"}
             texto={texto}
             imagem={
               "https://images.8tracks.com/cover/i/012/196/028/b59dda314520d3f2f49c77299f569f5d--miyazaki-film-howls-moving-castle-8950.jpg?rect=0,23,500,500&q=98&fm=jpg&fit=max"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 6"}
             texto={texto}
             imagem={
               "https://cinematologia.com.br/cine/wp-content/uploads/2016/09/A-Viagem-de-Chihiro-Walt-Disney-2-250x250.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 7"}
             texto={texto}
             imagem={
               "https://64.media.tumblr.com/1a949d465cdd1ad084fa8671cdfed059/c4a65213c8a316a8-c7/s250x400/1bdb66baa1480d4ed7e2a0ec0a2c404657290e4b.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 8"}
             texto={texto}
             imagem={
               "https://tricycle.org/wp-content/uploads/2020/10/studio-ghibli-spirituality-300x300.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 9"}
             texto={texto}
             imagem={
               "https://i.pinimg.com/564x/5c/6b/10/5c6b106d5fb5c9563a25cd02ba05005f.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 10"}
             texto={texto}
             imagem={
               "https://i.pinimg.com/474x/ff/42/65/ff4265d5425204c3a03a298f39ff8366.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 11"}
             texto={texto}
             imagem={
               "https://i.pinimg.com/736x/09/45/9f/09459fd71f2839c78d2bcfa2db79e41f.jpg"
             }
           />
-          <Card
+          <Cartao
             titulo={"Titulo 12"}
             texto={texto}
             imagem={

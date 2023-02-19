@@ -4,7 +4,7 @@ header {
   top: 0;
   grid-template: 1fr / 0.2fr 0.8fr;
   background-color: white;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   border-bottom: 1px black solid;
 }
@@ -101,12 +101,12 @@ header svg {
 }
 @media all and (max-width: 1000px) {
   header nav a {
-    padding: 0 50px;
+    padding: 0 50px !important;
   }
 }
 @media all and (max-width: 830px) {
   header nav a {
-    padding: 0 30px;
+    padding: 0 30px !important;
   }
 }
 @media all and (max-width: 650px) {
