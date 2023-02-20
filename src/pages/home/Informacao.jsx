@@ -1,9 +1,9 @@
-import "./Informacao.css";
+import styles from "./Informacao.module.css";
 
 export default function Informacao({ titulo, link }) {
   return (
-    <div className="informacao">
-      <div className="texto">
+    <div className={styles.informacao}>
+      <div className={styles.texto}>
         <h2>{titulo}</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
@@ -18,7 +18,7 @@ export default function Informacao({ titulo, link }) {
           laudantium consectetur ad molestias est non?
         </p>
       </div>
-      <div className="imagem">
+      <div className={styles.imagem}>
         <img src={link} alt="Imagem" />
       </div>
     </div>

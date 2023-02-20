@@ -3,7 +3,7 @@
 }
 .slide img {
   height: calc(100vh - 80px);
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom) !important;
   object-fit: cover;
   object-position: center;
 }
@@ -24,6 +24,11 @@
 }
 .slide p {
   margin-bottom: 50px;
+}
+.slide a:hover{
+
+  background-color: rgba(0, 0, 0, 0.3);
+
 }
 .slide .carousel-indicators {
   background-image: linear-gradient(

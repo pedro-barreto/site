@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Aside.css";
+import styles from "./Aside.module.css";
 
 export default function Aside({ tituloAside, arrLinks }) {
   return (
-    <aside>
+    <aside className={styles.aside}>
       <h3>{tituloAside}</h3>
       <ul>
         {arrLinks.map((index) => (

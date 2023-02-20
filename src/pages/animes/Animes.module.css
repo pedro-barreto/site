@@ -1,7 +1,7 @@
-.acessorios {
+.animes {
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template: 1fr / 0.2fr 0.8fr;
+  grid-template: 1fr / 2fr 8fr;
   place-items: center;
 }

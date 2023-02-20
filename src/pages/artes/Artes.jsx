@@ -1,5 +1,5 @@
 import Aside from "../../components/Aside";
-import "./Acessorios.css";
+import "./Artes.css";
 
 export default function Acessorios() {
   const links = [
@@ -9,10 +9,10 @@ export default function Acessorios() {
   ];
 
   return (
-    <div className="acessorios">
-      <Aside tituloAside={"Acessórios"} arrLinks={links} />
+    <div className="artes">
+      <Aside tituloAside={"Artes"} arrLinks={links} />
       <div className="conteudo">
-        <h1>ACESSÓRIOS</h1>
+        <h1>Artes</h1>
       </div>
     </div>
   );

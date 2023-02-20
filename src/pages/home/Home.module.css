@@ -10,6 +10,12 @@
   word-spacing: 10px;
   letter-spacing: 2px;
 }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto !important;
+  justify-content: center;
+}
 @media all and (max-width: 800px) {
   .home h1 {
     font-size: 1.5rem;

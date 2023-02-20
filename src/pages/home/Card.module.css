@@ -1,49 +1,43 @@
-.cartoes {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto !important;
-  justify-content: center;
-}
-.cartao {
+.card {
   max-width: 250px;
   display: grid;
   place-items: start;
   margin: 0 20px 50px !important;
   text-align: center;
 }
-.cartao img {
+.card img {
   max-width: 250px;
 }
-.cartao img,
-.cartao details {
+.card img,
+.card details {
   background-color: white;
   color: black;
   padding: 10px !important;
 }
-.cartao summary {
+.card summary {
   cursor: pointer;
 }
-.cartao h3 {
+.card h3 {
   font-size: 1rem;
 }
-.cartao p {
+.card p {
   margin-top: 10px !important;
 }
-.cartao svg {
+.card svg {
   font-size: 1.2rem;
   margin-right: 5px !important;
 }
-.cartao details:not([open]) {
+.card details:not([open]) {
   align-items: flex-start;
 }
 @media all and (max-width: 880px) {
-  .cartao img,
-  .cartao {
+  .card img,
+  .card {
     max-width: 200px;
   }
 }
 @media all and (max-width: 560px) {
-  .cartao details p {
+  .card details p {
     font-size: 0.85rem;
   }
 }

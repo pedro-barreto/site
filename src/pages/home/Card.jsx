@@ -1,12 +1,12 @@
-import "./Cartao.css";
+import styles from "./Card.module.css";
 import { FaChevronDown } from "react-icons/fa";
 
 export default function cartao({ titulo, texto, imagem }) {
   return (
-    <div className="cartao">
+    <div className={styles.card}>
       <details>
         <summary>
-          <img src={imagem} alt="cartao" />
+          <img src={imagem} alt="card" />
           <h3>
             <FaChevronDown />
             {titulo}
