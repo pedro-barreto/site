@@ -1,4 +1,4 @@
-import styles from "./Footer.module.css";
+import styles from "../styles/components/Footer.module.scss";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

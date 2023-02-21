@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./Aside.module.css";
+import styles from "../styles/components/Aside.module.scss";
 
 export default function Aside({ tituloAside, arrLinks }) {
   return (

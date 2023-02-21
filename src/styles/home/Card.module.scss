@@ -1,0 +1,46 @@
+.card {
+  max-width: 250px;
+  display: grid;
+  place-items: start;
+  margin: 0 20px 50px;
+  text-align: center;
+  details,
+  img {
+    padding: 10px;
+  }
+  details {
+    background-color: white;
+    color: black;
+    &:not([open]) {
+      align-items: flex-start;
+    }
+    summary {
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 1rem;
+        svg {
+          font-size: 1.2rem;
+          margin-right: 5px;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+@media all and (max-width: 880px) {
+  .card {
+    max-width: 200px;
+  }
+}
+@media all and (max-width: 560px) {
+  p {
+    font-size: 0.85rem;
+  }
+}

@@ -1,7 +1,6 @@
-import styles from "./Home.module.css";
+import styles from "../../styles/home/Home.module.scss";
 import Informacao from "./Informacao";
 import Card from "./Card";
-import Slide from "../../components/Slide";
 
 export default function Home() {
   const texto =
@@ -10,7 +9,10 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.slide}>
-        <Slide />
+        <img
+          src="https://i0.wp.com/www.fatosdesconhecidos.com.br/wp-content/uploads/2019/02/totoro.jpg?fit=1920%2C1080&ssl=1"
+          alt="Foto inicial"
+        />
       </div>
       <div className={styles.informacoes}>
         <h1>INFORMAÇÕES STUDIO GHIBLI</h1>

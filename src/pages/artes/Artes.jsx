@@ -1,5 +1,5 @@
 import Aside from "../../components/Aside";
-import "./Artes.css";
+import styles from "../../styles/Artes.module.scss";
 
 export default function Acessorios() {
   const links = [
@@ -9,9 +9,9 @@ export default function Acessorios() {
   ];
 
   return (
-    <div className="artes">
+    <div className={styles.artes}>
       <Aside tituloAside={"Artes"} arrLinks={links} />
-      <div className="conteudo">
+      <div className={styles.conteudo}>
         <h1>Artes</h1>
       </div>
     </div>

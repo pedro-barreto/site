@@ -1,4 +1,4 @@
-import styles from "./Informacao.module.css";
+import styles from "../../styles/home/Informacao.module.scss";
 
 export default function Informacao({ titulo, link }) {
   return (

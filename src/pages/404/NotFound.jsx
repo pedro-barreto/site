@@ -1,4 +1,4 @@
-import styles from './NotFound.module.css'
+import styles from '../../styles/NotFound.module.scss'
 
 export default function NotFound() {
   return (
