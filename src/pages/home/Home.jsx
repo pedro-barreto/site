@@ -16,27 +16,22 @@ export default function Home() {
       </div>
       <div className={styles.informacoes}>
         <h1>INFORMAÇÕES STUDIO GHIBLI</h1>
-
         <Informacao
           titulo="Titulo 1"
           link="https://static.boredpanda.com/blog/wp-content/uploads/2016/11/studio-ghibli-inspired-fan-art-paintings-oil-watercolor-1-5832aa0d3b58f__880.jpg"
         />
-
         <Informacao
           titulo="Titulo 2"
           link="https://i.pinimg.com/564x/87/7d/1b/877d1b7863e50ff26e30c08c65021b5b.jpg"
         />
-
         <Informacao
           titulo="Titulo 3"
           link="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/065/252/size500_yohichi2.jpg"
         />
-
         <Informacao
           titulo="Titulo 4"
           link="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/093/260/size500_yoichi_web1.jpg"
         />
-
         <Informacao
           titulo="Titulo 5"
           link="https://i.pinimg.com/originals/99/ea/6d/99ea6d9f121d25ec135e4a2f7a599f29.jpg"

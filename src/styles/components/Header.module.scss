@@ -55,14 +55,12 @@ header {
           svg {
             font-size: 40px;
           }
-        }   
+        }
       }
     }
   }
 }
-
 @include mixin.hamburguer(none, 3rem);
-
 .hamburguerOpen .hamburguerMenu {
   animation: open 0.2s linear forwards;
   @include mixin.hamburguer(block, 3rem);
@@ -71,6 +69,9 @@ header {
   animation: close 0.2s linear forwards;
   @include mixin.hamburguer(block, 3rem);
 }
+
+//-----------------------KEY FRAMES-------------------------------------
+
 @keyframes open {
   from {
     transform: translateY(-110vh);
@@ -87,36 +88,40 @@ header {
     transform: translateY(-110vh);
   }
 }
-@media all and (max-width: 1000px) {
-  nav {
-    a {
-      padding: 0 40px;
-    }
-  }
-}
-@media all and (max-width: 830px) {
-  nav {
-    a {
-      padding: 0 20px;
-    }
-  }
-}
-@media all and (max-width: 650px) {
-  nav {
-    &:first-of-type {
-      li {
-        &:not(:last-child) {
-          display: none;
-        }
-        &:last-child {
-          display: flex;
-        }
+
+//-----------------------MEDIA QUERIES-------------------------------------
+
+@media all {
+  @media (max-width: 1000px) {
+    nav {
+      a {
+        padding: 0 40px;
       }
     }
   }
-
-  @include mixin.hamburguer(block, 3rem);
-}
-@media all and (max-width: 350px) {
-  @include mixin.hamburguer(block, 2.4rem);
+  @media (max-width: 830px) {
+    nav {
+      a {
+        padding: 0 20px;
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    nav {
+      &:first-of-type {
+        li {
+          &:not(:last-child) {
+            display: none;
+          }
+          &:last-child {
+            display: flex;
+          }
+        }
+      }
+    }
+    @include mixin.hamburguer(block, 3rem);
+  }
+  @media (max-width: 350px) {
+    @include mixin.hamburguer(block, 2.4rem);
+  }
 }

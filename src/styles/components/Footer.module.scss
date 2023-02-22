@@ -31,15 +31,20 @@ footer {
     text-align: center;
   }
 }
-@media all and (max-width: 300px) {
-  p,
-  a {
-    font-size: 0.8rem;
+
+//-----------------------MEDIA QUERIES-------------------------------------
+
+@media all {
+  @media (max-width: 300px) {
+    p,
+    a {
+      font-size: 0.8rem;
+    }
   }
-}
-@media all and (max-width: 250px) {
-  p,
-  a {
-    font-size: 0.7rem;
+  @media (max-width: 250px) {
+    p,
+    a {
+      font-size: 0.7rem;
+    }
   }
 }

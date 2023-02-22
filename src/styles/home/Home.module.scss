@@ -27,23 +27,28 @@
     justify-content: center;
   }
 }
-@media all and (max-width: 800px) {
-  h1 {
-    font-size: 1.5rem;
+
+//-----------------------MEDIA QUERIES-------------------------------------
+
+@media all {
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 1.5rem;
+    }
   }
-}
-@media all and (max-width: 600px) {
-  h1 {
-    font-size: 1.2rem;
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.2rem;
+    }
   }
-}
-@media all and (max-width: 450px) {
-  h1 {
-    font-size: 0.9rem;
+  @media (max-width: 450px) {
+    h1 {
+      font-size: 0.9rem;
+    }
   }
-}
-@media all and (max-width: 350px) {
-  h1 {
-    font-size: 0.8rem;
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 0.8rem;
+    }
   }
 }

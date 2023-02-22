@@ -7,8 +7,8 @@ export default function Aside({ tituloAside, arrLinks }) {
       <h3>{tituloAside}</h3>
       <ul>
         {arrLinks.map((index) => (
-          <li key={index["nome"]}>
-            <Link to={index["url"]}>{index["nome"]}</Link>
+          <li key={index.nome}>
+            <Link to={index.url}>{index["nome"]}</Link>
           </li>
         ))}
       </ul>
