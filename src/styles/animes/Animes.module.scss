@@ -1,0 +1,16 @@
+.animes {
+  display: grid;
+  place-items: center;
+  grid-template: 1fr / 2fr 8fr;
+  background-color: black;
+  color: white;
+  .conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titulo{
+      margin: 50px auto;
+    }
+  }
+}

@@ -9,7 +9,6 @@ import Sobre from "./pages/sobre/Sobre";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NotFound from "./pages/404/NotFound";
-import Teste from "./pages/Teste"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,7 +20,6 @@ root.render(
         <Route path="/site/animes" element={<Animes />} />
         <Route path="/site/artes" element={<Artes />} />
         <Route path="/site/sobre" element={<Sobre />} />
-        <Route path="/site/teste" element={<Teste />} />
         <Route path="/site/*" element={<NotFound />} />
       </Routes>
     </main>

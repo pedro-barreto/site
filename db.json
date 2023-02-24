@@ -1,20 +1,9 @@
 {
-  "alunos": [
+  "animes": [
     {
-      "nome": "",
+      "nome": "Naruto",
+      "sinopse": "Naruto é um menino que...",
       "id": 1
-    },
-    {
-      "nome": "",
-      "id": 2
-    },
-    {
-      "nome": "",
-      "id": 3
-    },
-    {
-      "nome": "",
-      "id": 4
     }
   ]
 }
