@@ -1,8 +1,8 @@
-import styles from "../styles/components/Header.module.scss";
-import { Link } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { ImCross } from "react-icons/im";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ImCross } from "react-icons/im";
+import { GiHamburgerMenu } from "react-icons/gi";
+import styles from "../styles/components/Header.module.scss";
 
 export default function Header() {
   const corpo = document.body;

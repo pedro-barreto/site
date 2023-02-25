@@ -1,13 +1,13 @@
-import Aside from "../../components/Aside";
 import Formulario from "./Formulario";
-import styles from "../../styles/animes/Animes.module.scss";
-
-const links = [
-  { nome: "Link 1", url: "" },
-  { nome: "Link 2", url: "" },
-];
+import { Aside } from "../components/index";
+import styles from "../styles/pages/Animes.module.scss";
 
 export default function Jogos() {
+  const links = [
+    { nome: "Link 1", url: "" },
+    { nome: "Link 2", url: "" },
+  ];
+
   return (
     <div className={styles.animes}>
       <Aside tituloAside={"Animes"} arrLinks={links} />

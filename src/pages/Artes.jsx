@@ -1,5 +1,5 @@
-import Aside from "../../components/Aside";
-import styles from "../../styles/Artes.module.scss";
+import { Aside } from "../components/index";
+import styles from "../styles/pages/Artes.module.scss";
 
 export default function Acessorios() {
   const links = [

@@ -1,14 +1,9 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import { Header, Footer } from "./components/";
+import { Home, Animes, Artes, Sobre, NotFound } from "./pages/";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Animes from "./pages/animes/Animes";
-import Artes from "./pages/artes/Artes";
-import Sobre from "./pages/sobre/Sobre";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import NotFound from "./pages/404/NotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

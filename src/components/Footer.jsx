@@ -1,6 +1,6 @@
-import styles from "../styles/components/Footer.module.scss";
-import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
+import styles from "../styles/components/Footer.module.scss";
 
 export default function Footer() {
   return (

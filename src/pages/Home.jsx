@@ -1,6 +1,6 @@
-import styles from "../../styles/home/Home.module.scss";
-import Informacao from "./Informacao";
 import Card from "./Card";
+import Informacao from "./Informacao";
+import styles from "../styles/pages/Home.module.scss";
 
 export default function Home() {
   const texto =

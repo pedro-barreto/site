@@ -34,8 +34,13 @@ table {
     tr {
       td {
         border: 1px solid black;
-        &:last-child, &:first-child {
+        &:last-child,
+        &:first-child {
           text-align: center;
+        }
+        &:last-child {
+          display: flex;
+          justify-content: space-evenly;
         }
         svg {
           transition: 0.2s;

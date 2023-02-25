@@ -4,6 +4,21 @@
       "nome": "Naruto",
       "sinopse": "Naruto é um menino que...",
       "id": 1
+    },
+    {
+      "nome": "Kimetsu no yaiba",
+      "sinopse": "Tanjiro é um garoto que...",
+      "id": 2
+    },
+    {
+      "nome": "Dragon Ball Z",
+      "sinopse": "Goku é um homem que...",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "nome": "One punch man",
+      "sinopse": "Saitama é um homem que..."
     }
   ]
 }
