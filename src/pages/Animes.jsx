@@ -1,4 +1,4 @@
-import Formulario from "./Formulario";
+import Formulario from "../components/Formulario";
 import { Aside } from "../components/index";
 import styles from "../styles/pages/Animes.module.scss";
 

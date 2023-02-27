@@ -1,8 +1,10 @@
 .sobre {
   width: 100%;
-  height: calc(100vh - 185px);
-  display: grid;
-  place-items: center;
-  background-color: black;
-  color: white;
+  background-color: rgb(220, 220, 220);
+  padding-top: 50px;
+  h1{
+    text-align: center;
+    font-family: "Monoton", cursive;
+    margin-bottom: 50px;
+  }
 }

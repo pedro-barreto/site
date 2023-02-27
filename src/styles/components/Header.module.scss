@@ -70,6 +70,11 @@ header {
   @include mixin.hamburguer(block, 3rem);
 }
 
+.ajusteHeader{
+  width: 100%;
+  height: 80px;
+}
+
 //-----------------------KEY FRAMES-------------------------------------
 
 @keyframes open {
@@ -91,7 +96,7 @@ header {
 
 //-----------------------MEDIA QUERIES-------------------------------------
 
-@media all {
+@media screen {
   @media (max-width: 1000px) {
     nav {
       a {

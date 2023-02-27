@@ -1,11 +1,10 @@
-import Card from "./Card";
-import Informacao from "./Informacao";
+import Card from "../components/Card";
+import Informacao from "../components/Informacao";
 import styles from "../styles/pages/Home.module.scss";
 
 export default function Home() {
   const texto =
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis cupiditate beatae animi id aut, velit odio placeat quaerat autem voluptatem dolores? Maxime nulla autem non alias aliquam enim nihil atque, natus ratione in, beatae iusto explicabo doloribus modi repellendus omnis velit hic consectetur eos, magni nostrum praesentium necessitatibus fugiat";
-
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui recusandae officia. Doloremque exercitationem quia sint vel aliquam corporis unde inventore excepturi dolores nihil maiores sapiente aut ad delectus magnam fuga animi tempore assumenda esse accusantium neque, veritatis et! Laborum non necessitatibus rem illum iure architecto vel voluptates maiores? Autem et nobis odio earum, similique, commodi veritatis, nostrum animi molestiae veniam unde quae quod. Ipsum, ex tempora nulla corporis deleniti iusto harum at quisquam dicta magnam dolorem, veritatis adipisci, nihil sapiente cum sed architecto? Aliquam voluptatem debitis expedita voluptas! Porro maiores voluptates quod cum accusamus dolor ex est tempore possimus! ";
   return (
     <div className={styles.home}>
       <div className={styles.slide}>
@@ -16,25 +15,31 @@ export default function Home() {
       </div>
       <div className={styles.informacoes}>
         <h1>INFORMAÇÕES STUDIO GHIBLI</h1>
+        <hr />
         <Informacao
           titulo="Titulo 1"
-          link="https://static.boredpanda.com/blog/wp-content/uploads/2016/11/studio-ghibli-inspired-fan-art-paintings-oil-watercolor-1-5832aa0d3b58f__880.jpg"
+          paragrafo={texto}
+          foto="https://static.boredpanda.com/blog/wp-content/uploads/2016/11/studio-ghibli-inspired-fan-art-paintings-oil-watercolor-1-5832aa0d3b58f__880.jpg"
         />
         <Informacao
           titulo="Titulo 2"
-          link="https://i.pinimg.com/564x/87/7d/1b/877d1b7863e50ff26e30c08c65021b5b.jpg"
+          paragrafo={texto}
+          foto="https://i.pinimg.com/564x/87/7d/1b/877d1b7863e50ff26e30c08c65021b5b.jpg"
         />
         <Informacao
           titulo="Titulo 3"
-          link="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/065/252/size500_yohichi2.jpg"
+          paragrafo={texto}
+          foto="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/065/252/size500_yohichi2.jpg"
         />
         <Informacao
           titulo="Titulo 4"
-          link="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/093/260/size500_yoichi_web1.jpg"
+          paragrafo={texto}
+          foto="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/093/260/size500_yoichi_web1.jpg"
         />
         <Informacao
           titulo="Titulo 5"
-          link="https://i.pinimg.com/originals/99/ea/6d/99ea6d9f121d25ec135e4a2f7a599f29.jpg"
+          paragrafo={texto}
+          foto="https://i.pinimg.com/originals/99/ea/6d/99ea6d9f121d25ec135e4a2f7a599f29.jpg"
         />
       </div>
       <div>

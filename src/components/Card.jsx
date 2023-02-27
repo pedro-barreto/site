@@ -1,5 +1,5 @@
 import { FaChevronDown } from "react-icons/fa";
-import styles from "../styles/pages/Card.module.scss";
+import styles from "../styles/components/Card.module.scss";
 
 export default function cartao({ titulo, texto, imagem }) {
   return (

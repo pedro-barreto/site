@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/pages/Formulario.module.scss";
+import styles from "../styles/components/Formulario.module.scss";
 import { MdModeEditOutline, MdDelete } from "react-icons/md";
 
 export default class Formulario extends React.Component {

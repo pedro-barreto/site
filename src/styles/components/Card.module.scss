@@ -37,7 +37,7 @@
 
 //-----------------------MEDIA QUERIES-------------------------------------
 
-@media all {
+@media screen {
   @media (max-width: 880px) {
     .card {
       max-width: 200px;
@@ -51,12 +51,16 @@
   @media (max-width: 500px) {
     .card {
       max-width: 150px;
-      h3 {
-        font-size: 0.85rem !important;
-        svg {
-          font-size: 0.95rem !important;
+      details {
+        padding: 0 0 10px;
+        h3 {
+          font-size: 0.85rem !important;
+          svg {
+            font-size: 0.95rem !important;
+          }
         }
       }
+
       p {
         font-size: 0.7rem;
       }
