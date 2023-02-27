@@ -1,4 +1,3 @@
-import Formulario from "../components/Formulario";
 import { Aside } from "../components/index";
 import styles from "../styles/pages/Animes.module.scss";
 
@@ -15,8 +14,6 @@ export default function Jogos() {
         <div className={styles.titulo}>
           <h1>Animes</h1>
         </div>
-        <Formulario />
-        <section></section>
       </div>
     </div>
   );
