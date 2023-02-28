@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  list-style-type: none;
-  text-decoration: none;
-}
-body {
-  max-width: 1500px;
-  margin: auto;
-}
-img {
-  display: flex;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

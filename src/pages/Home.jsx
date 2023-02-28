@@ -1,19 +1,18 @@
 import Card from "../components/Card";
 import Informacao from "../components/Informacao";
-import styles from "../styles/pages/Home.module.scss";
 
 export default function Home() {
   const texto =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui recusandae officia. Doloremque exercitationem quia sint vel aliquam corporis unde inventore excepturi dolores nihil maiores sapiente aut ad delectus magnam fuga animi tempore assumenda esse accusantium neque, veritatis et! Laborum non necessitatibus rem illum iure architecto vel voluptates maiores? Autem et nobis odio earum, similique, commodi veritatis, nostrum animi molestiae veniam unde quae quod. Ipsum, ex tempora nulla corporis deleniti iusto harum at quisquam dicta magnam dolorem, veritatis adipisci, nihil sapiente cum sed architecto? Aliquam voluptatem debitis expedita voluptas! Porro maiores voluptates quod cum accusamus dolor ex est tempore possimus! ";
   return (
-    <div className={styles.home}>
-      <div className={styles.slide}>
+    <div >
+      <div >
         <img
           src="https://i0.wp.com/www.fatosdesconhecidos.com.br/wp-content/uploads/2019/02/totoro.jpg?fit=1920%2C1080&ssl=1"
           alt="Foto inicial"
         />
       </div>
-      <div className={styles.informacoes}>
+      <div >
         <h1>INFORMAÇÕES STUDIO GHIBLI</h1>
         <hr />
         <Informacao
@@ -43,10 +42,10 @@ export default function Home() {
         />
       </div>
       <div>
-        <div className={styles.titulo}>
+        <div>
           <h1>CARTÕES SOBRE O STUDIO GHIBLI</h1>
         </div>
-        <div className={styles.cards}>
+        <div>
           <Card
             titulo={"Titulo 1"}
             texto={texto}

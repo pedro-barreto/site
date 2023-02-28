@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
-import styles from "../styles/components/Footer.module.scss";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer>
       <ul>
         <li>
           <Link to={"https://github.com/pedro-barreto"} target={"_blank"}>

@@ -1,5 +1,4 @@
-import { Aside } from "../components/index";
-import styles from "../styles/pages/Animes.module.scss";
+import Aside from "../components/Aside";
 
 export default function Jogos() {
   const links = [
@@ -8,10 +7,10 @@ export default function Jogos() {
   ];
 
   return (
-    <div className={styles.animes}>
+    <div>
       <Aside tituloAside={"Animes"} arrLinks={links} />
-      <div className={styles.conteudo}>
-        <div className={styles.titulo}>
+      <div>
+        <div>
           <h1>Animes</h1>
         </div>
       </div>

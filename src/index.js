@@ -1,13 +1,18 @@
 import "./index.css";
 import React from "react";
+import Home from "./pages/Home";
+import Sobre from "./pages/Sobre";
+import Artes from "./pages/Artes";
+import Animes from "./pages/Animes";
 import ReactDOM from "react-dom/client";
-import { Header, Footer } from "./components/";
-import { Home, Animes, Artes, Sobre, NotFound } from "./pages/";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Router>
+  <BrowserRouter>
     <Header />
     <main>
       <Routes>
@@ -19,5 +24,5 @@ root.render(
       </Routes>
     </main>
     <Footer />
-  </Router>
+  </BrowserRouter>
 );

@@ -1,9 +1,8 @@
 import { FaChevronDown } from "react-icons/fa";
-import styles from "../styles/components/Card.module.scss";
 
 export default function cartao({ titulo, texto, imagem }) {
   return (
-    <div className={styles.card}>
+    <div>
       <details>
         <summary>
           <img src={imagem} alt="card" />
