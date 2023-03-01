@@ -1,33 +1,48 @@
 import { Link } from "react-router-dom";
+import Logo from "../img/logo.png";
 
 export default function Header() {
   return (
-    <>
-      <div></div>
-      <header>
-        <Link to="/site/">
-          <img
-            src="https://styles.redditmedia.com/t5_quz5p/styles/profileIcon_eq31ro3kejw11.jpg?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=7089cc5f089b78916ee824dbae601e9a9e04e031"
-            alt="Logo"
-          />
-        </Link>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/site/">HOME</Link>
-            </li>
-            <li>
-              <Link to="/site/animes">ANIMES</Link>
-            </li>
-            <li>
-              <Link to="/site/artes">ARTES</Link>
-            </li>
-            <li>
-              <Link to="/site/sobre">SOBRE</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </>
+    <header className="box-content h-28 w-full max-w-screen-2xl grid grid-cols-12 fixed top-0 bg-white border border-black z-50">
+      <Link to="/site/" className="flex justify-center py-3 h-28 col-span-2">
+        <img src={Logo} alt="logo" className="h-full" />
+      </Link>
+      <nav className="h-28 col-span-10">
+        <ul className="h-full flex">
+          <li className="w-full h-full hover:bg-gray-400 hover:text-white">
+            <Link
+              to="/site/"
+              className="w-full h-full grid place-items-center "
+            >
+              HOME
+            </Link>
+          </li>
+          <li className="w-full h-full hover:bg-gray-400 hover:text-white">
+            <Link
+              to="/site/animes"
+              className="w-full h-full grid place-items-center"
+            >
+              ANIMES
+            </Link>
+          </li>
+          <li className="w-full h-full hover:bg-gray-400 hover:text-white">
+            <Link
+              to="/site/artes"
+              className="w-full h-full grid place-items-center"
+            >
+              ARTES
+            </Link>
+          </li>
+          <li className="w-full h-full hover:bg-gray-400 hover:text-white">
+            <Link
+              to="/site/sobre"
+              className="w-full h-full grid place-items-center hover:bg-gray-400 hover:text-white"
+            >
+              SOBRE
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }

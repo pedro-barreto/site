@@ -1,3 +1,8 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
+
+body {
+  max-width: 1536px;
+  margin: 7rem auto 0;
+}

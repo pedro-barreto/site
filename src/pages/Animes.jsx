@@ -7,12 +7,10 @@ export default function Jogos() {
   ];
 
   return (
-    <div>
+    <div className="grid grid-cols-12 h-fmhf">
       <Aside tituloAside={"Animes"} arrLinks={links} />
-      <div>
-        <div>
-          <h1>Animes</h1>
-        </div>
+      <div className="grid place-items-center col-span-10 h-fmhf">
+        <h1 className="text-4xl font-black">Animes</h1>
       </div>
     </div>
   );

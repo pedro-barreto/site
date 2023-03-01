@@ -1,135 +1,67 @@
-import Card from "../components/Card";
 import Informacao from "../components/Informacao";
+import homeInit from "../img/homeInit.jpg";
+import image1 from "../img/image1.jpg";
+import image2 from "../img/image2.jpg";
+import image3 from "../img/image3.jpg";
+import image4 from "../img/image4.jpg";
+import image5 from "../img/image5.jpg";
+import card01 from "../img/card01.jpg";
+import card02 from "../img/card02.jpg";
+import card03 from "../img/card03.jpg";
+import card04 from "../img/card04.jpg";
+import card05 from "../img/card05.jpg";
+import card06 from "../img/card06.jpg";
+import card07 from "../img/card07.jpg";
+import card08 from "../img/card08.jpg";
+import card09 from "../img/card09.jpg";
+import card10 from "../img/card10.jpg";
+import card11 from "../img/card11.jpg";
+import card12 from "../img/card12.jpg";
+import Card from "../components/Card";
 
 export default function Home() {
   const texto =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui recusandae officia. Doloremque exercitationem quia sint vel aliquam corporis unde inventore excepturi dolores nihil maiores sapiente aut ad delectus magnam fuga animi tempore assumenda esse accusantium neque, veritatis et! Laborum non necessitatibus rem illum iure architecto vel voluptates maiores? Autem et nobis odio earum, similique, commodi veritatis, nostrum animi molestiae veniam unde quae quod. Ipsum, ex tempora nulla corporis deleniti iusto harum at quisquam dicta magnam dolorem, veritatis adipisci, nihil sapiente cum sed architecto? Aliquam voluptatem debitis expedita voluptas! Porro maiores voluptates quod cum accusamus dolor ex est tempore possimus! ";
+  const texto2 =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum optio perferendis aliquam repellat veritatis blanditiis unde rem non quia ipsum magni ipsa iste similique praesentium, in, facere corporis et! ";
   return (
-    <div >
-      <div >
-        <img
-          src="https://i0.wp.com/www.fatosdesconhecidos.com.br/wp-content/uploads/2019/02/totoro.jpg?fit=1920%2C1080&ssl=1"
-          alt="Foto inicial"
-        />
-      </div>
-      <div >
-        <h1>INFORMAÇÕES STUDIO GHIBLI</h1>
-        <hr />
-        <Informacao
-          titulo="Titulo 1"
-          paragrafo={texto}
-          foto="https://static.boredpanda.com/blog/wp-content/uploads/2016/11/studio-ghibli-inspired-fan-art-paintings-oil-watercolor-1-5832aa0d3b58f__880.jpg"
-        />
-        <Informacao
-          titulo="Titulo 2"
-          paragrafo={texto}
-          foto="https://i.pinimg.com/564x/87/7d/1b/877d1b7863e50ff26e30c08c65021b5b.jpg"
-        />
-        <Informacao
-          titulo="Titulo 3"
-          paragrafo={texto}
-          foto="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/065/252/size500_yohichi2.jpg"
-        />
-        <Informacao
-          titulo="Titulo 4"
-          paragrafo={texto}
-          foto="https://70f186a60af817fe0731-09dac41207c435675bfd529a14211b5c.ssl.cf1.rackcdn.com/assets/attachments_p/000/093/260/size500_yoichi_web1.jpg"
-        />
-        <Informacao
-          titulo="Titulo 5"
-          paragrafo={texto}
-          foto="https://i.pinimg.com/originals/99/ea/6d/99ea6d9f121d25ec135e4a2f7a599f29.jpg"
-        />
-      </div>
+    <div>
       <div>
-        <div>
-          <h1>CARTÕES SOBRE O STUDIO GHIBLI</h1>
+        <img
+          src={homeInit}
+          alt="Foto inicial"
+          className="w-screen h-fmh object-cover"
+        />
+      </div>
+      <div className="px-14">
+        <h1 className="text-center my-28 text-4xl font-bold">
+          INFORMAÇÕES STUDIO GHIBLI
+        </h1>
+        <div className="space-y-28">
+        <Informacao titulo="Titulo 1" paragrafo={texto} foto={image1} />
+        <Informacao titulo="Titulo 2" paragrafo={texto} foto={image2} />
+        <Informacao titulo="Titulo 3" paragrafo={texto} foto={image3} />
+        <Informacao titulo="Titulo 4" paragrafo={texto} foto={image4} />
+        <Informacao titulo="Titulo 5" paragrafo={texto} foto={image5} />
         </div>
-        <div>
-          <Card
-            titulo={"Titulo 1"}
-            texto={texto}
-            imagem={
-              "https://www.filmmusicsite.com/images/covers/normal/80907.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 2"}
-            texto={texto}
-            imagem={
-              "https://www.filmmusicsite.com/images/covers/normal/80870.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 3"}
-            texto={texto}
-            imagem={
-              "https://preview.redd.it/vv1yxxaimze11.jpg?auto=webp&s=1bfc6517dbeed878afd678b4429767b0c81329e9"
-            }
-          />
-          <Card
-            titulo={"Titulo 4"}
-            texto={texto}
-            imagem={
-              "https://64.media.tumblr.com/d8adca2eae42f5755e27e2aca69ceb1a/c4a65213c8a316a8-2a/s250x400/75b562c6353e355e169891e91d0ddd43ed48ac3f.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 5"}
-            texto={texto}
-            imagem={
-              "https://images.8tracks.com/cover/i/012/196/028/b59dda314520d3f2f49c77299f569f5d--miyazaki-film-howls-moving-castle-8950.jpg?rect=0,23,500,500&q=98&fm=jpg&fit=max"
-            }
-          />
-          <Card
-            titulo={"Titulo 6"}
-            texto={texto}
-            imagem={
-              "https://cinematologia.com.br/cine/wp-content/uploads/2016/09/A-Viagem-de-Chihiro-Walt-Disney-2-250x250.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 7"}
-            texto={texto}
-            imagem={
-              "https://64.media.tumblr.com/1a949d465cdd1ad084fa8671cdfed059/c4a65213c8a316a8-c7/s250x400/1bdb66baa1480d4ed7e2a0ec0a2c404657290e4b.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 8"}
-            texto={texto}
-            imagem={
-              "https://tricycle.org/wp-content/uploads/2020/10/studio-ghibli-spirituality-300x300.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 9"}
-            texto={texto}
-            imagem={
-              "https://i.pinimg.com/564x/5c/6b/10/5c6b106d5fb5c9563a25cd02ba05005f.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 10"}
-            texto={texto}
-            imagem={
-              "https://i.pinimg.com/474x/ff/42/65/ff4265d5425204c3a03a298f39ff8366.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 11"}
-            texto={texto}
-            imagem={
-              "https://i.pinimg.com/736x/09/45/9f/09459fd71f2839c78d2bcfa2db79e41f.jpg"
-            }
-          />
-          <Card
-            titulo={"Titulo 12"}
-            texto={texto}
-            imagem={
-              "https://i0.wp.com/coolhunting.com/wp-content/uploads/2017/08/large-55.jpg?resize=600%2C600&ssl=1"
-            }
-          />
+      </div>
+      <div className="p-14">
+        <h1 className="text-center my-28 text-4xl font-bold">
+          CARTÕES SOBRE O STUDIO GHIBLI
+        </h1>
+        <div className="flex flex-wrap justify-center">
+          <Card titulo={"Titulo 1 "} texto={texto2} imagem={card01} />
+          <Card titulo={"Titulo 2 "} texto={texto2} imagem={card02} />
+          <Card titulo={"Titulo 3 "} texto={texto2} imagem={card03} />
+          <Card titulo={"Titulo 4 "} texto={texto2} imagem={card04} />
+          <Card titulo={"Titulo 5 "} texto={texto2} imagem={card05} />
+          <Card titulo={"Titulo 6 "} texto={texto2} imagem={card06} />
+          <Card titulo={"Titulo 7 "} texto={texto2} imagem={card07} />
+          <Card titulo={"Titulo 8 "} texto={texto2} imagem={card08} />
+          <Card titulo={"Titulo 9 "} texto={texto2} imagem={card09} />
+          <Card titulo={"Titulo 10"} texto={texto2} imagem={card10} />
+          <Card titulo={"Titulo 11"} texto={texto2} imagem={card11} />
+          <Card titulo={"Titulo 12"} texto={texto2} imagem={card12} />
         </div>
       </div>
     </div>
