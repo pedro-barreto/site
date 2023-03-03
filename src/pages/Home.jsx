@@ -21,9 +21,10 @@ import Card from "../components/Card";
 
 export default function Home() {
   const texto =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui recusandae officia. Doloremque exercitationem quia sint vel aliquam corporis unde inventore excepturi dolores nihil maiores sapiente aut ad delectus magnam fuga animi tempore assumenda esse accusantium neque, veritatis et! Laborum non necessitatibus rem illum iure architecto vel voluptates maiores? Autem et nobis odio earum, similique, commodi veritatis, nostrum animi molestiae veniam unde quae quod. Ipsum, ex tempora nulla corporis deleniti iusto harum at quisquam dicta magnam dolorem, veritatis adipisci, nihil sapiente cum sed architecto? Aliquam voluptatem debitis expedita voluptas! Porro maiores voluptates quod cum accusamus dolor ex est tempore possimus! ";
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui recusandae officia. Doloremque exercitationem quia sint vel aliquam corporis unde inventore excepturi dolores nihil maiores sapiente aut ad delectus magnam fuga animi tempore assumenda esse accusantium neque, veritatis et! Laborum non necessitatibus rem illum iure architecto vel voluptates maiores? Autem et nobis odio earum, similique, commodi veritatis, nostrum animi molestiae veniam unde quae quod. Ipsum, ex tempora nulla corporis deleniti iusto harum at quisquam dicta magnam dolorem, veritatis adipisci, nihil sapiente cum sed architecto? Aliquam voluptatem debitis expedita voluptas! Porro maiores voluptates quod cum accusamus dolor ex est ";
   const texto2 =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum optio perferendis aliquam repellat veritatis blanditiis unde rem non quia ipsum magni ipsa iste similique praesentium, in, facere corporis et! ";
+
   return (
     <div>
       <div>
@@ -33,20 +34,20 @@ export default function Home() {
           className="w-screen h-fmh object-cover"
         />
       </div>
-      <div className="px-14">
-        <h1 className="text-center my-28 text-4xl font-bold">
+      <div className="bg-cor2">
+        <h1 className="text-center py-28 text-4xl font-bold">
           INFORMAÇÕES STUDIO GHIBLI
         </h1>
         <div className="space-y-28">
-        <Informacao titulo="Titulo 1" paragrafo={texto} foto={image1} />
-        <Informacao titulo="Titulo 2" paragrafo={texto} foto={image2} />
-        <Informacao titulo="Titulo 3" paragrafo={texto} foto={image3} />
-        <Informacao titulo="Titulo 4" paragrafo={texto} foto={image4} />
-        <Informacao titulo="Titulo 5" paragrafo={texto} foto={image5} />
+          <Informacao titulo="Titulo 1" paragrafo={texto} foto={image1} />
+          <Informacao titulo="Titulo 2" paragrafo={texto} foto={image2} />
+          <Informacao titulo="Titulo 3" paragrafo={texto} foto={image3} />
+          <Informacao titulo="Titulo 4" paragrafo={texto} foto={image4} />
+          <Informacao titulo="Titulo 5" paragrafo={texto} foto={image5} />
         </div>
       </div>
-      <div className="p-14">
-        <h1 className="text-center my-28 text-4xl font-bold">
+      <div className=" bg-cor4">
+        <h1 className="text-center py-28 text-4xl font-bold">
           CARTÕES SOBRE O STUDIO GHIBLI
         </h1>
         <div className="flex flex-wrap justify-center">

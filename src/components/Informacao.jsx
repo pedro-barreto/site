@@ -1,13 +1,21 @@
 export default function Informacao({ titulo, paragrafo, foto }) {
   return (
-    <div className="grid grid-cols-12">
-      <div className="flex flex-col justify-center col-span-9 p-6">
-        <h2 className="mb-4 text-xl font-bold">{titulo}</h2>
-        <p>{paragrafo}</p>
+    <>
+      <div className="flex bg-cor1 rounded-2xl mx-14">
+        <div className="flex flex-col justify-center px-8">
+          <h2 className=" text-xl font-bold text-white">{titulo}</h2>
+          <hr className="my-2" />
+          <p className="text-gray-100 text-justify">{paragrafo}</p>
+        </div>
+        <div className="h-80 aspect-square">
+          <img
+            src={foto}
+            alt="Imagem"
+            className="rounded-r-2xl w-full h-full"
+          />
+        </div>
       </div>
-      <div className="col-span-3">
-        <img src={foto} alt="Imagem" />
-      </div>
-    </div>
+      <hr className="border-black" />
+    </>
   );
 }
