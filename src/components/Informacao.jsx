@@ -1,7 +1,7 @@
-export default function Informacao({ titulo, paragrafo, foto }) {
+export default function Informacao({ titulo, paragrafo, foto, row }) {
   return (
     <>
-      <div className="flex bg-cor1 rounded-2xl mx-14">
+      <div className={`flex bg-cor1 rounded-2xl mx-14`}>
         <div className="flex flex-col justify-center px-8">
           <h2 className=" text-xl font-bold text-white">{titulo}</h2>
           <hr className="my-2" />

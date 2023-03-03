@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+  plugins: [require("flowbite/plugin")],
+  content: ["./src/**/*.{js,jsx}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       height: {
@@ -10,9 +11,12 @@ module.exports = {
       colors: {
         cor1: "#1E3040",
         cor2: "#435C73",
-        cor3: "#FFE9F3",
+        cor3: "#E94F37",
         cor4: "#EEB868",
         cor5: "#A3333D",
+      },
+      fontFamily: {
+        nippo: "Nippo, sans-serif",
       },
     },
   },
