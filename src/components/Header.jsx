@@ -4,12 +4,12 @@ import Logo from "../img/logo.png";
 export default function Header() {
   return (
     <header className="h-28 w-full max-w-screen-2xl grid grid-cols-12 fixed top-0 bg-cor1 font-nippo z-50 ">
-      <Link to="/site/" className="flex justify-center py-3 h-28 col-span-2 ">
+      <Link to="/site" className="flex justify-center py-3 h-28 col-span-2 ">
         <img src={Logo} alt="logo" className="h-full" />
       </Link>
-      <nav className="flex h-full col-span-10 font-bold text-xl text-white">
+      <nav className="flex h-full col-span-10 font-bold text-xl text-gray-200">
         <Link
-          to="/site/"
+          to="/site"
           className="w-full h-full grid place-items-center hover:bg-gray-500 transition duration-300"
         >
           HOME

@@ -10,27 +10,27 @@ export default function Card({ titulo, texto, imagem }) {
 
   return (
     <div
-      className="w-64 h-fit m-5 bg-cor5 rounded-lg cursor-pointer"
+      className="w-64 h-fit m-5 bg-cor5 rounded-lg overflow-hidden cursor-pointer shadow-xl border border-white"
       onClick={() => handleClick()}
     >
       <img
-        className="w-full rounded-t-lg aspect-square object-cover"
+        className="w-full aspect-square object-cover"
         src={imagem}
         alt="Card"
       />
       <div className="p-5 h-auto">
-        <div className="flex justify-center items-center text-black">
+        <div className="flex justify-center items-center text-gray-200">
           {card ? (
             <FiArrowUp className="text-2xl mr-2 relative bottom-1" />
           ) : (
             <FiArrowDown className="text-2xl mr-2 relative bottom-1" />
           )}
 
-          <h5 className="mb-2 text-2xl font-bold">{titulo}</h5>
+          <h5 className="mb-2 text-2xl font-bold text-gray-200">{titulo}</h5>
         </div>
         <p
           className={
-            card ? "mb-3 font-semibold text-gray-100 text-center" : "hidden"
+            card ? "mb-3 font-semibold text-gray-300 text-center" : "hidden"
           }
         >
           {texto}

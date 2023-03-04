@@ -1,5 +1,5 @@
 import Aside from "../components/Aside";
-import Modal from "../components/Modal";
+import Form from "../components/Form";
 
 export default function Jogos() {
   const links = [
@@ -8,11 +8,10 @@ export default function Jogos() {
   ];
 
   return (
-    <div className="grid grid-cols-12 h-fmhf bg-cor3">
+    <div className="grid grid-cols-12 h-fmhf bg-cor4">
       <Aside tituloAside={"Animes"} arrLinks={links} />
       <div className="flex flex-col justify-center items-center col-span-10">
-        <Modal />
-        <h1 className="text-4xl font-black">Animes</h1>
+        <Form />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <footer className="h-28 p-5 bg-cor1 text-white flex flex-col justify-center items-center font-bold">
+    <footer className="h-28 p-5 bg-cor1 text-gray-200 flex flex-col justify-center items-center font-bold">
       <div>
         <Link
           to={"https://github.com/pedro-barreto"}
