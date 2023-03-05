@@ -21,6 +21,12 @@ module.exports = {
       fontFamily: {
         nippo: "Nippo, sans-serif",
       },
+      aspectRatio: {
+        grid: "12/6",
+      },
+      maxHeight: {
+        fmh: "calc(100vh - 7rem)",
+      },
     },
   },
 };

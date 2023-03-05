@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 
-export default function Card({ titulo, texto, imagem }) {
+export default function Card({ titulo, texto, imagem, loading }) {
   const [card, setCard] = useState(false);
 
   const handleClick = () => {
@@ -10,13 +10,14 @@ export default function Card({ titulo, texto, imagem }) {
 
   return (
     <div
-      className="w-64 h-fit m-5 bg-cor5 rounded-lg overflow-hidden cursor-pointer shadow-xl border border-white"
+      className="w-64 h-fit m-5 bg-cor5 rounded-xl overflow-hidden cursor-pointer shadow-xl border border-white"
       onClick={() => handleClick()}
     >
       <img
         className="w-full aspect-square object-cover"
         src={imagem}
         alt="Card"
+        loading={loading?"lazy":"eager"}
       />
       <div className="p-5 h-auto">
         <div className="flex justify-center items-center text-gray-200">

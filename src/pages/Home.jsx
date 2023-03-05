@@ -30,18 +30,18 @@ export default function Home() {
       <Slide />
       <div className="bg-cor2">
         <h1 className="text-center text-gray-300 py-28 text-5xl font-nippo">
-          INFORMAÇÕES STUDIO GHIBLI
+          STUDIO GHIBLI
         </h1>
         <div className="space-y-28">
-          <Informacao titulo="Titulo 1" paragrafo={texto} foto={image1} />
+          <Informacao titulo="Titulo 1" paragrafo={texto} foto={image1} loading={true}/>
           <hr />
-          <Informacao titulo="Titulo 2" paragrafo={texto} foto={image2} />
+          <Informacao titulo="Titulo 2" paragrafo={texto} foto={image2} loading={true}/>
           <hr />
-          <Informacao titulo="Titulo 3" paragrafo={texto} foto={image3} />
+          <Informacao titulo="Titulo 3" paragrafo={texto} foto={image3} loading={true}/>
           <hr />
-          <Informacao titulo="Titulo 4" paragrafo={texto} foto={image4} />
+          <Informacao titulo="Titulo 4" paragrafo={texto} foto={image4} loading={true}/>
           <hr />
-          <Informacao titulo="Titulo 5" paragrafo={texto} foto={image5} />
+          <Informacao titulo="Titulo 5" paragrafo={texto} foto={image5} loading={true}/>
         </div>
       </div>
       <svg viewBox="0 0 1440 320" className="bg-cor4">
@@ -55,18 +55,18 @@ export default function Home() {
           CARDS SOBRE O STUDIO GHIBLI
         </h1>
         <div className="flex flex-wrap justify-center">
-          <Card titulo={"Titulo 1 "} texto={texto2} imagem={card01} />
-          <Card titulo={"Titulo 2 "} texto={texto2} imagem={card02} />
-          <Card titulo={"Titulo 3 "} texto={texto2} imagem={card03} />
-          <Card titulo={"Titulo 4 "} texto={texto2} imagem={card04} />
-          <Card titulo={"Titulo 5 "} texto={texto2} imagem={card05} />
-          <Card titulo={"Titulo 6 "} texto={texto2} imagem={card06} />
-          <Card titulo={"Titulo 7 "} texto={texto2} imagem={card07} />
-          <Card titulo={"Titulo 8 "} texto={texto2} imagem={card08} />
-          <Card titulo={"Titulo 9 "} texto={texto2} imagem={card09} />
-          <Card titulo={"Titulo 10"} texto={texto2} imagem={card10} />
-          <Card titulo={"Titulo 11"} texto={texto2} imagem={card11} />
-          <Card titulo={"Titulo 12"} texto={texto2} imagem={card12} />
+          <Card titulo={"Titulo 1 "} texto={texto2} imagem={card01} loading={true}/>
+          <Card titulo={"Titulo 2 "} texto={texto2} imagem={card02} loading={true}/>
+          <Card titulo={"Titulo 3 "} texto={texto2} imagem={card03} loading={true}/>
+          <Card titulo={"Titulo 4 "} texto={texto2} imagem={card04} loading={true}/>
+          <Card titulo={"Titulo 5 "} texto={texto2} imagem={card05} loading={true}/>
+          <Card titulo={"Titulo 6 "} texto={texto2} imagem={card06} loading={true}/>
+          <Card titulo={"Titulo 7 "} texto={texto2} imagem={card07} loading={true}/>
+          <Card titulo={"Titulo 8 "} texto={texto2} imagem={card08} loading={true}/>
+          <Card titulo={"Titulo 9 "} texto={texto2} imagem={card09} loading={true}/>
+          <Card titulo={"Titulo 10"} texto={texto2} imagem={card10} loading={true}/>
+          <Card titulo={"Titulo 11"} texto={texto2} imagem={card11} loading={true}/>
+          <Card titulo={"Titulo 12"} texto={texto2} imagem={card12} loading={true}/>
         </div>
       </div>
     </div>
