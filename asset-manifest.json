@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.28f74539.css",
-    "main.js": "/site/static/js/main.9146ecf4.js",
-    "static/media/homeInit.jpg": "/site/static/media/homeInit.89c4f2704f41a919e3d4.jpg",
+    "main.css": "/site/static/css/main.08cdabf1.css",
+    "main.js": "/site/static/js/main.5c215283.js",
     "static/media/card12.jpg": "/site/static/media/card12.686223a934b5faa84b0a.jpg",
     "static/media/image1.jpg": "/site/static/media/image1.c7a38aac7e9b5c99e493.jpg",
     "static/media/grid02.jpg": "/site/static/media/grid02.0f5c64fd77ef949ce31c.jpg",
+    "static/media/slide1.jpg": "/site/static/media/slide1.f19b6840b3c94d6ec965.jpg",
     "static/media/image4.jpg": "/site/static/media/image4.0b7a3b7804317a942258.jpg",
+    "static/media/slide5.jpg": "/site/static/media/slide5.2c66d07d825237f8b479.jpg",
     "static/media/card03.jpg": "/site/static/media/card03.05a8dae0f031d9feac84.jpg",
+    "static/media/slide4.jpg": "/site/static/media/slide4.69aae5bfd5dc25e60299.jpg",
+    "static/media/slide3.jpg": "/site/static/media/slide3.30261c3f6e9e1024e943.jpg",
     "static/media/card05.jpg": "/site/static/media/card05.0e411c09d9e1c968464e.jpg",
     "static/media/image3.jpg": "/site/static/media/image3.00bb6b46043b2256c25a.jpg",
     "static/media/grid14.jpg": "/site/static/media/grid14.7173ad82b48fb73eb340.jpg",
@@ -20,6 +23,7 @@
     "static/media/grid10.jpg": "/site/static/media/grid10.43ff821aeff545eeafc8.jpg",
     "static/media/grid06.jpg": "/site/static/media/grid06.befa2ac1cf1c1fc940a3.jpg",
     "static/media/image5.jpg": "/site/static/media/image5.612e9c4232a9076a12c0.jpg",
+    "static/media/slide2.jpg": "/site/static/media/slide2.f6a961a3b96305e6e544.jpg",
     "static/media/grid09.jpg": "/site/static/media/grid09.f58e2662f1b98c0f7e1d.jpg",
     "static/media/grid17.jpg": "/site/static/media/grid17.ded260bea8aaec1a77f4.jpg",
     "static/media/logo.png": "/site/static/media/logo.b8bdb0ba8e8ac9684c60.png",
@@ -40,11 +44,11 @@
     "static/media/card08.jpg": "/site/static/media/card08.f286613e92d3b5d95285.jpg",
     "static/media/grid05.jpg": "/site/static/media/grid05.8843b501dbad3102f9d6.jpg",
     "index.html": "/site/index.html",
-    "main.28f74539.css.map": "/site/static/css/main.28f74539.css.map",
-    "main.9146ecf4.js.map": "/site/static/js/main.9146ecf4.js.map"
+    "main.08cdabf1.css.map": "/site/static/css/main.08cdabf1.css.map",
+    "main.5c215283.js.map": "/site/static/js/main.5c215283.js.map"
   },
   "entrypoints": [
-    "static/css/main.28f74539.css",
-    "static/js/main.9146ecf4.js"
+    "static/css/main.08cdabf1.css",
+    "static/js/main.5c215283.js"
   ]
 }
