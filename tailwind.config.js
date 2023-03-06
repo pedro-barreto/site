@@ -12,10 +12,10 @@ module.exports = {
         fmhf: "calc(100vh - 14rem)",
       },
       colors: {
-        cor1: "#1E3040",
-        cor2: "#435C73",
-        cor3: "#E94F37",
-        cor4: "#EEB868",
+        cor1: "#EFE6DD",
+        cor2: "#75B8C8",
+        cor3: "#D1B3C4",
+        cor4: "#F3DFA2",
         cor5: "#A3333D",
       },
       fontFamily: {

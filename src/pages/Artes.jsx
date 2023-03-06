@@ -25,7 +25,7 @@ export default function Acessorios() {
   ];
 
   return (
-    <div className="grid grid-cols-12 bg-cor4 ">
+    <div className="grid grid-cols-12 bg-cor2 ">
       <Aside tituloAside={"Artes"} arrLinks={links} />
       <div className="sm:col-span-10 col-span-full w-full p-3 sm:p-14 space-y-10">
         {/*---------------------GRID DE ARTES 1 ---------------------*/}

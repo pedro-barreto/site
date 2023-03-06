@@ -1,17 +1,23 @@
-export default function Informacao({ titulo, paragrafo, foto, loading }) {
+export default function Informacao({ titulo, paragrafo, foto, row }) {
   return (
     <div
-      className={`lg:grid lg:grid-cols-12 bg-cor1 rounded-2xl m-5 sm:mx-14 overflow-hidden border flex flex-col-reverse`}
+      className={`flex flex-col-reverse bg-gray-100 rounded-2xl m-5 sm:mx-14 overflow-hidden border border-black ${
+        row ? "lg:flex-row-reverse" : "lg:flex-row"
+      }`}
     >
-      <div className="flex flex-col justify-center p-8 pt-0 col-span-8">
-        <h2 className="text-center lg:pt-8 lg:text-left text-xl font-bold text-gray-300">
+      <div className="h-4/6 lg:w-9/12 pb-5 px-5 flex flex-col m-auto">
+        <h2
+          className={`text-center pt-2 lg:pt-8 text-xl font-bold text-gray-700 ${
+            row ? "lg:text-right" : "lg:text-left"
+          }`}
+        >
           {titulo}
         </h2>
-        <hr className="my-2" />
-        <p className="text-gray-400 sm:text-justify text-center">{paragrafo}</p>
+        <hr className="my-2 border-black" />
+        <p className="text-gray-600 text-justify">{paragrafo}</p>
       </div>
-      <div className="max-w-xs aspect-square m-auto col-span-4 p-5">
-        <img src={foto} alt="Imagem" className="w-full h-full" loading={loading?"lazy":"eager"} />
+      <div className="max-h-80 lg:w-3/12 aspect-square flex m-auto p-5 overflow-hidden">
+        <img src={foto} alt="Imagem" loading="lazy" className="transition duration-300 hover:scale-150" />
       </div>
     </div>
   );
