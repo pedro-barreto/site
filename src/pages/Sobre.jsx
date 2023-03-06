@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Label, TextInput, Textarea } from "flowbite-react";
+import { Label, TextInput, Textarea, Button } from "flowbite-react";
 import { HiMail } from "react-icons/hi";
 
 export default function Sobre() {
   return (
-    <div className=" bg-cor3">
+    <div className=" bg-cor3 pb-28">
       <h1 className="text-center py-28 text-4xl font-bold text-gray-100">
         SOBRE NOSSA EMPRESA!
       </h1>
@@ -106,7 +106,7 @@ export default function Sobre() {
         </div>
       </div>
 
-      <form className="w-11/12 md:w-3/5 bg-gray-400 p-5 m-auto my-28">
+      <form className="w-11/12 md:w-3/5 bg-gray-400 p-5 m-auto mt-28 rounded-2xl">
         <h1 className="text-center text-4xl p-10 font-bold">Fale conosco</h1>
         <div>
           <div className="mb-2 block">
@@ -137,6 +137,7 @@ export default function Sobre() {
           required={true}
           rows={4}
         />
+        <Button type="submit" className="w-full mt-5">Enviar</Button>
       </form>
     </div>
   );
