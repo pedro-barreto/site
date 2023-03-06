@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <header
       className={` w-full max-w-screen-2xl grid fixed top-0 bg-cor1 font-nippo z-10 border-b border-black 2xl:border 2xl:border-gray-400 filter opacity-95 ${
-        hamb ? "h-screen grid-rows-6" : "h-28 grid-cols-12"
+        hamb ? "motion-safe:h-full grid-rows-6" : "h-28 grid-cols-12"
       }`}
     >
       <Link
@@ -45,7 +45,7 @@ export default function Header() {
       >
         <div
           id="hamburguer"
-          className={`grid place-items-center w-full h-full text-7xl sm:hidden ${
+          className={`max grid place-items-center text-7xl sm:hidden ${
             hamb ? "" : "hover:text-gray-200 hover:bg-gray-400"
           }`}
           onClick={() => handleClick()}
@@ -58,7 +58,7 @@ export default function Header() {
         </div>
         <Link
           to="/site"
-          className={`w-full h-full sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
+          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
             hamb ? "grid" : "hidden"
           }`}
           onClick={() => {
@@ -71,7 +71,7 @@ export default function Header() {
 
         <Link
           to="/site/animes"
-          className={`w-full h-full sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
+          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
             hamb ? "grid" : "hidden"
           }`}
           onClick={() => {
@@ -84,7 +84,7 @@ export default function Header() {
 
         <Link
           to="/site/artes"
-          className={`w-full h-full sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
+          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
             hamb ? "grid" : "hidden"
           }`}
           onClick={() => {
@@ -97,7 +97,7 @@ export default function Header() {
 
         <Link
           to="/site/sobre"
-          className={`w-full h-full sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
+          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 ${
             hamb ? "grid" : "hidden"
           }`}
           onClick={() => {
@@ -108,7 +108,7 @@ export default function Header() {
           SOBRE
         </Link>
         <div
-          className={`w-full h-full flex items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 cursor-pointer ${
+          className={`max flex items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 cursor-pointer p-1 ${
             hamb ? "" : "hidden"
           } sm:flex`}
           onClick={() => setDark(!dark)}

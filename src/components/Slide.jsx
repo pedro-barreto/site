@@ -7,7 +7,7 @@ import { Carousel } from "flowbite-react";
 
 export default function Slide() {
   return (
-    <div className="w-full aspect-video max-w-full max-h-fmh">
+    <div className="w-full aspect-video max-w-full min-h-screen/2 max-h-fmh bg-gray-600">
       <Carousel slideInterval={5000}>
         <img src={slide1} alt="Slide" />
         <img src={slide2} alt="Slide" />

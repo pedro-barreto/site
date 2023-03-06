@@ -27,6 +27,9 @@ module.exports = {
       maxHeight: {
         fmh: "calc(100vh - 7rem)",
       },
+      minHeight: {
+        "screen/2": "50vh",
+      },
     },
   },
 };
