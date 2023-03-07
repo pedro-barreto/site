@@ -25,12 +25,14 @@ export default function Acessorios() {
   ];
 
   return (
-    <div className="grid grid-cols-12 bg-cor2 ">
+    <div className="grid grid-cols-12 bg-cor2 dark:bg-gray-600">
       <Aside tituloAside={"Artes"} arrLinks={links} />
       <div className="sm:col-span-10 col-span-full w-full p-3 sm:p-14 space-y-10">
         {/*---------------------GRID DE ARTES 1 ---------------------*/}
 
-        <h1 className="text-center text-5xl font-bold font-nippo">ARTE 1</h1>
+        <h1 className="text-center text-5xl font-bold font-nippo dark:text-gray-300">
+          ARTE 1
+        </h1>
         <section className="w-full aspect-grid grid grid-cols-12 grid-rows-6 border-4 border-black bg-white">
           <div className="row-span-2 col-span-6 border-2 border-black">
             <img
@@ -76,7 +78,9 @@ export default function Acessorios() {
 
         {/*---------------------GRID DE ARTES 2 ---------------------*/}
 
-        <h1 className="text-center text-5xl font-bold font-nippo">ARTE 2</h1>
+        <h1 className="text-center text-5xl font-bold font-nippo dark:text-gray-200">
+          ARTE 2
+        </h1>
         <section className="w-full aspect-grid grid grid-cols-12 grid-rows-6 border-4 border-black bg-white">
           <div className="row-span-4 col-span-8 border-2 border-black">
             <img
@@ -130,7 +134,9 @@ export default function Acessorios() {
 
         {/*---------------------GRID DE ARTES 3 ---------------------*/}
 
-        <h1 className="text-center text-5xl font-bold font-nippo">ARTE 3</h1>
+        <h1 className="text-center text-5xl font-bold font-nippo dark:text-gray-200">
+          ARTE 3
+        </h1>
         <section className="w-full aspect-grid grid grid-cols-12 grid-rows-6 border-4 border-black bg-white overflow-hidden">
           <div className="row-span-3 col-span-3 border-2 border-black">
             <img

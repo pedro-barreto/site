@@ -14,16 +14,18 @@ export default function Jogos() {
     { id: 3, tipo: "romance" },
   ];
 
-  const titulo = "Anime Bla bla bla";
+  const titulo = "Anime";
   const foto = "https://via.placeholder.com/250";
   const sinopse =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sunt asperiores atque amet suscipit dolores et culpa. Voluptas, tenetur quae? ";
 
   return (
-    <div className="grid grid-cols-12 bg-cor4">
+    <div className="grid grid-cols-12 bg-cor4-100 dark:bg-gray-600">
       <Aside tituloAside={"Animes"} arrLinks={links} />
       <div className="flex flex-col justify-center items-center sm:col-span-10 col-span-full">
-        <h1 className="font-bold text-5xl p-5">ANIMES</h1>
+        <h1 className="font-bold text-5xl py-14 font-nippo dark:text-gray-300">
+          ANIMES
+        </h1>
         <div className="w-11/12 sm:w-2/4">
           <Form />
         </div>
