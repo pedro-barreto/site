@@ -10,7 +10,7 @@ export default function Card({ titulo, texto, imagem, loading }) {
 
   return (
     <div
-      className="w-64 h-fit m-5 bg-cor5 rounded-xl overflow-hidden cursor-pointer shadow-xl border border-white dark:bg-red-900"
+      className="max-w-card h-fit m-5 bg-cor5 rounded-xl overflow-hidden cursor-pointer shadow-xl border border-black black:border-white dark:bg-red-900"
       onClick={() => handleClick()}
     >
       <img
@@ -19,17 +19,17 @@ export default function Card({ titulo, texto, imagem, loading }) {
         alt="Card"
         loading={loading ? "lazy" : "eager"}
       />
-      <div className="p-5 h-auto text-gray-300">
-        <div className="flex justify-center items-center">
+      <div className="p-2 sm:p-5 h-auto text-gray-300">
+        <div className="flex justify-center items-center space-x-1">
           {card ? (
-            <FiArrowUp className="text-2xl mr-2 relative bottom-1" />
+            <FiArrowUp className="text-xl sm:text-2xl" />
           ) : (
-            <FiArrowDown className="text-2xl mr-2 relative bottom-1" />
+            <FiArrowDown className="text-xl sm:text-2xl" />
           )}
 
-          <h5 className="mb-2 text-2xl font-bold">{titulo}</h5>
+          <h5 className="text-lg sm:text-xl font-bold">{titulo}</h5>
         </div>
-        <p className={card ? "mb-3 font-semibold text-center" : "hidden"}>
+        <p className={card ? "text-center text-sm sm:text-base p-2" : "hidden"}>
           {texto}
         </p>
       </div>

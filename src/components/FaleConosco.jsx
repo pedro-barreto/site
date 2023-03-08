@@ -1,7 +1,7 @@
 export default function FaleConosco() {
   return (
-    <form className="w-11/12 lg:w-3/5 bg-gray-300 p-5 m-auto mt-28 rounded-2xl border border-black dark:bg-gray-400 shadow-2xl">
-      <h1 className="text-center text-4xl py-10 font-bold dark:text-gray-300">
+    <form className="w-11/12 lg:w-3/5 bg-gray-300 p-5 m-auto mt-14 sm:mt-28 rounded-2xl border border-black dark:bg-gray-400 shadow-2xl">
+      <h1 className="text-center text-3xl sm:text-4xl py-10 font-bold dark:text-gray-300">
         FALE CONOSCO
       </h1>
       <div className="space-y-5">

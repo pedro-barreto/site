@@ -27,17 +27,17 @@ export default function Acessorios() {
   return (
     <div className="grid grid-cols-12 bg-cor2 dark:bg-gray-600">
       <Aside tituloAside={"Artes"} arrLinks={links} />
-      <div className="sm:col-span-10 col-span-full w-full p-3 sm:p-14 space-y-10">
+      <div className="sm:col-span-10 col-span-full w-full px-3 pb-14 pt-0 sm:p-14 sm:pt-0">
         {/*---------------------GRID DE ARTES 1 ---------------------*/}
 
-        <h1 className="text-center text-5xl font-bold font-nippo dark:text-gray-300">
+        <h1 className="text-center text-4xl sm:text-5xl font-bold font-nippo dark:text-gray-300 py-14">
           ARTE 1
         </h1>
         <section className="w-full aspect-grid grid grid-cols-12 grid-rows-6 border-4 border-black bg-white">
           <div className="row-span-2 col-span-6 border-2 border-black">
             <img
               src={arte01}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading="eager"
             />
@@ -45,7 +45,7 @@ export default function Acessorios() {
           <div className="row-span-6 col-span-6 border-2 border-black">
             <img
               src={arte02}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading="eager"
             />
@@ -53,7 +53,7 @@ export default function Acessorios() {
           <div className="row-span-4 col-span-3 border-2 border-black">
             <img
               src={arte03}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading="eager"
             />
@@ -61,7 +61,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-3 border-2 border-black">
             <img
               src={arte04}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading="eager"
             />
@@ -69,7 +69,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-3 border-2 border-black">
             <img
               src={arte05}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading="eager"
             />
@@ -78,14 +78,14 @@ export default function Acessorios() {
 
         {/*---------------------GRID DE ARTES 2 ---------------------*/}
 
-        <h1 className="text-center text-5xl font-bold font-nippo dark:text-gray-200">
+        <h1 className="text-center text-4xl sm:text-5xl font-bold font-nippo dark:text-gray-200 py-14">
           ARTE 2
         </h1>
         <section className="w-full aspect-grid grid grid-cols-12 grid-rows-6 border-4 border-black bg-white">
           <div className="row-span-4 col-span-8 border-2 border-black">
             <img
               src={arte06}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -93,7 +93,7 @@ export default function Acessorios() {
           <div className="row-span-4 col-span-4 border-2 border-black">
             <img
               src={arte07}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -101,7 +101,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-3 border-2 border-black">
             <img
               src={arte08}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -109,7 +109,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-3 border-2 border-black ">
             <img
               src={arte09}
-              className="w-full h-full object-cover p-2"
+              className="w-full h-full object-cover p-1 sm:p-2"
               alt="arte"
               loading={"lazy"}
             />
@@ -117,7 +117,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-3 border-2 border-black">
             <img
               src={arte10}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -125,7 +125,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-3 border-2 border-black">
             <img
               src={arte11}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -134,14 +134,14 @@ export default function Acessorios() {
 
         {/*---------------------GRID DE ARTES 3 ---------------------*/}
 
-        <h1 className="text-center text-5xl font-bold font-nippo dark:text-gray-200">
+        <h1 className="text-center text-4xl sm:text-5xl font-bold font-nippo dark:text-gray-200 py-14">
           ARTE 3
         </h1>
         <section className="w-full aspect-grid grid grid-cols-12 grid-rows-6 border-4 border-black bg-white overflow-hidden">
           <div className="row-span-3 col-span-3 border-2 border-black">
             <img
               src={arte12}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -149,7 +149,7 @@ export default function Acessorios() {
           <div className="row-span-6 col-span-3 border-2 border-black">
             <img
               src={arte13}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -157,7 +157,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-6 border-2 border-black">
             <img
               src={arte14}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -165,7 +165,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-6 border-2 border-black">
             <img
               src={arte15}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -173,7 +173,7 @@ export default function Acessorios() {
           <div className="row-span-3 col-span-3 border-2 border-black">
             <img
               src={arte16}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />
@@ -181,7 +181,7 @@ export default function Acessorios() {
           <div className="row-span-2 col-span-6 border-2 border-black">
             <img
               src={arte17}
-              className="w-full h-full object-cover p-2 "
+              className="w-full h-full object-cover p-1 sm:p-2 "
               alt="arte"
               loading={"lazy"}
             />

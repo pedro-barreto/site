@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Logo from "../img/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
@@ -21,6 +21,13 @@ export default function Header() {
 
   dark ? (corpo.className = "dark") : (corpo.className = "light");
 
+  const linkNav = `max group sm:grid place-items-center transition duration-300 hover:text-gray-200 hover:bg-gray-400 dark:hover:bg-gray-500 ${
+    hamb ? "grid" : "hidden"
+  }`;
+
+  const markRoutes =
+    "border-b border-black dark:border-white group-hover:border-gray-200";
+
   return (
     <header
       className={` w-full max-w-screen-2xl grid fixed top-0 bg-cor1 font-nippo z-10 border-b border-black  2xl:border filter opacity-95 dark:bg-gray-800 dark:border-gray-300 ${
@@ -32,12 +39,14 @@ export default function Header() {
         className={`justify-center py-3 h-28 col-span-6 sm:col-span-2 ${
           hamb ? "hidden" : "flex"
         }`}
-        onClick={() => window.scrollTo(0)}
+        onClick={() => window.scrollTo(0, 0)}
       >
         <img
           src={Logo}
           alt="logo"
-          className={`h-full object-cover ${dark ? "" : "filter invert"}`}
+          className={`h-full object-cover duration-300 ${
+            dark ? "" : "filter invert"
+          }`}
         />
       </Link>
       <nav
@@ -47,69 +56,81 @@ export default function Header() {
       >
         <div
           id="hamburguer"
-          className={`max grid place-items-center text-7xl sm:hidden cursor-pointer ${
+          className={`max grid place-items-center text-6xl sm:hidden cursor-pointer ${
             hamb
-              ? ""
+              ? "text-red-500 hover:bg-red-500 hover:text-gray-100 dark:text-red-700 dark:hover:bg-red-700 dark:hover:text-gray-300"
               : "hover:text-gray-200 hover:bg-gray-400 dark:hover:bg-gray-500"
           }`}
           onClick={() => handleClick()}
         >
-          {hamb ? (
-            <CgClose className="max text-red-500 hover:bg-red-500 hover:text-gray-100 dark:text-red-700 dark:hover:bg-red-700 dark:hover:text-gray-300" />
-          ) : (
-            <GiHamburgerMenu />
-          )}
+          {hamb ? <CgClose className="text-8xl" /> : <GiHamburgerMenu />}
         </div>
         <Link
           to="/site"
-          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 dark:hover:bg-gray-500 ${
-            hamb ? "grid" : "hidden"
-          }`}
+          className={linkNav}
           onClick={() => {
             setHamb(false);
             window.scrollTo(0, 0);
           }}
         >
-          HOME
+          <Routes>
+            <Route
+              path="/site/"
+              element={<span className={markRoutes}>HOME</span>}
+            ></Route>
+            <Route path="*" element="HOME"></Route>
+          </Routes>
         </Link>
 
         <Link
           to="/site/animes"
-          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 dark:hover:bg-gray-500 ${
-            hamb ? "grid" : "hidden"
-          }`}
+          className={linkNav}
           onClick={() => {
             setHamb(false);
             window.scrollTo(0, 0);
           }}
         >
-          ANIMES
+          <Routes>
+            <Route
+              path="/site/animes"
+              element={<span className={markRoutes}>ANIMES</span>}
+            ></Route>
+            <Route path="*" element="ANIMES"></Route>
+          </Routes>
         </Link>
 
         <Link
           to="/site/artes"
-          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 dark:hover:bg-gray-500 ${
-            hamb ? "grid" : "hidden"
-          }`}
+          className={linkNav}
           onClick={() => {
             setHamb(false);
             window.scrollTo(0, 0);
           }}
         >
-          ARTES
+          <Routes>
+            <Route
+              path="/site/artes"
+              element={<span className={markRoutes}>ARTES</span>}
+            ></Route>
+            <Route path="*" element="ARTES"></Route>
+          </Routes>
         </Link>
 
         <Link
           to="/site/sobre"
-          className={`max sm:grid place-items-center hover:text-gray-200 hover:bg-gray-400 transition duration-300 dark:hover:bg-gray-500 ${
-            hamb ? "grid" : "hidden"
-          }`}
+          className={linkNav}
           onClick={() => {
             setHamb(false);
             window.scrollTo(0, 0);
           }}
         >
-          SOBRE
+          <Routes>
+            <Route
+              path="/site/sobre"
+              element={<span className={markRoutes}>SOBRE</span>}
+            ></Route>
+            <Route path="*" element="SOBRE"></Route>
+          </Routes>
         </Link>
         <div
           className={`max flex items-center hover:text-gray-200 hover:bg-gray-500 transition duration-300 cursor-pointer p-1 ${

@@ -21,18 +21,22 @@ module.exports = {
       colors: {
         cor1: "#EFE6DD",
         cor2: "#75B8C8",
-        cor3: "#D1B3C4",
+        cor3: "#95A3B3",
         cor4: { 100: "#F3DFA2", 300: "#ECCD6F" },
         cor5: "#A3333D",
       },
       fontFamily: {
         nippo: "Nippo, sans-serif",
+        redslit: "Redslit, sans-serif",
       },
       aspectRatio: {
         grid: "12/6",
       },
       maxHeight: {
         fmh: "calc(100vh - 7rem)",
+      },
+      maxWidth:{
+        card: "250px"
       },
       minHeight: {
         "screen/2": "50vh",

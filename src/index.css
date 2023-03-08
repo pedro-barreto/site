@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
@@ -8,6 +7,10 @@
   @font-face {
     font-family: "Nippo";
     src: url("./fonts/Nippo-Bold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Redslit";
+    src: url("./fonts/Redslit.otf") format("opentype");
   }
 }
 @layer utilities {
@@ -20,7 +23,7 @@ body {
   max-width: 1536px;
   margin: 7rem auto 0;
   background-color: #efe6dd;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body.dark {
   background-color: #374151;

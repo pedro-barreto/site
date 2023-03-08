@@ -20,7 +20,7 @@ root.render(
         <Route path="/site/animes" element={<Animes />} />
         <Route path="/site/artes" element={<Artes />} />
         <Route path="/site/sobre" element={<Sobre />} />
-        <Route path="/site/*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
     <Footer />

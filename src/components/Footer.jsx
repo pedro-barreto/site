@@ -14,7 +14,7 @@ export default function Footer() {
           <span>Github</span>
         </Link>
       </div>
-      <p className="text-xs sm:text-lg pb-5">
+      <p className="text-xs sm:text-lg pb-5 duration-300">
         Desenvolvido por Pedro B. &copy; {new Date().getFullYear()}
       </p>
     </footer>
