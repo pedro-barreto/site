@@ -9,12 +9,12 @@ export default function Jogos() {
   ];
 
   const categoria = [
-    { id: 1, tipo: "comédia" },
-    { id: 2, tipo: "isekai" },
-    { id: 3, tipo: "romance" },
+    { id: 1, tipo: "categ 1" },
+    { id: 2, tipo: "categ 2" },
+    { id: 3, tipo: "categ 3" },
   ];
 
-  const titulo = "Anime";
+  const titulo = "Título";
   const foto = "https://via.placeholder.com/250";
   const sinopse =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sunt asperiores atque amet suscipit dolores et culpa. Voluptas, tenetur quae? ";

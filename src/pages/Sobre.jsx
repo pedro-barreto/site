@@ -10,8 +10,8 @@ export default function Sobre() {
       <h1 className="text-center pb-8 sm:pb-14 text-4xl sm:text-5xl font-bold font-nippo dark:text-gray-300">
         SOBRE NOSSA EMPRESA!
       </h1>
-      <div className="w-full aspect-video flex justify-end items-center max-h-fmh text-gray-300 p-5 pt-0 space-y-5 lg:bg-about1 filter opacity-95 rounded-xl border border-white">
-        <div className="lg:w-1/2 bg-gray-700 p-4 sm:p-14 rounded-md filter lg:opacity-80">
+      <div className="w-full lg:aspect-video flex justify-end items-center max-h-fmh text-gray-300 lg:p-5 pt-0 space-y-5 lg:bg-about1 filter opacity-95 rounded-xl border border-white">
+        <div className="lg:w-1/2 bg-gray-700 p-4 sm:p-14 rounded-xl filter lg:opacity-80">
           <h1 className="text-gray-100 text-2xl sm:text-3xl font-bold">
             Lorem ipsum dolor, sit amet Lorem ipsum elit. Sit, autem?
           </h1>
@@ -40,8 +40,8 @@ export default function Sobre() {
         </div>
       </div>
 
-      <div className="w-full aspect-video flex items-center max-h-fmh text-gray-300 p-5 pt-0 space-y-5 lg:bg-about2 filter opacity-95 mt-10 sm:mt-28 rounded-xl border border-white">
-        <div className="lg:w-1/2 bg-gray-700 p-4 sm:p-14 rounded-md filter lg:opacity-80">
+      <div className="w-full lg:aspect-video flex items-center max-h-fmh text-gray-300 lg:p-5 space-y-5 lg:bg-about2 filter opacity-95 mt-10 sm:mt-28 rounded-xl border border-white">
+        <div className="lg:w-1/2 bg-gray-700 p-4 sm:p-14 rounded-xl filter lg:opacity-80">
           <h1 className="text-gray-100 text-2xl sm:text-3xl font-bold">
             Lorem ipsum dolor sit amet.
           </h1>

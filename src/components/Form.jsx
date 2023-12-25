@@ -6,7 +6,7 @@ export default function Form() {
         <input
           type="text"
           name="nome"
-          placeholder="Ex: Naruto"
+          placeholder="Ex: Título"
           required={true}
           className="w-full rounded-md dark:bg-slate-500 dark:text-gray-100 dark:placeholder:text-gray-200"
         />
@@ -16,7 +16,7 @@ export default function Form() {
         <input
           type="text"
           name="sinopse"
-          placeholder="Ex: Naruto é um menino que..."
+          placeholder="Ex: Lorem ipsum dolor sit amet..."
           required={true}
           className="w-full rounded-md dark:bg-slate-500 dark:text-gray-100 dark:placeholder:text-gray-200"
         />
