@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/site/static/css/main.f66571b8.css",
-    "main.js": "/site/static/js/main.cb780a93.js",
+    "main.css": "/site/static/css/main.6086dd1c.css",
+    "main.js": "/site/static/js/main.3657f2f2.js",
     "static/media/card12.jpg": "/site/static/media/card12.686223a934b5faa84b0a.jpg",
     "static/media/Redslit.otf": "/site/static/media/Redslit.1264dd80a6b3fa473e7a.otf",
     "static/media/image1.jpg": "/site/static/media/image1.c7a38aac7e9b5c99e493.jpg",
@@ -45,11 +45,11 @@
     "static/media/card08.jpg": "/site/static/media/card08.f286613e92d3b5d95285.jpg",
     "static/media/grid05.jpg": "/site/static/media/grid05.8843b501dbad3102f9d6.jpg",
     "index.html": "/site/index.html",
-    "main.f66571b8.css.map": "/site/static/css/main.f66571b8.css.map",
-    "main.cb780a93.js.map": "/site/static/js/main.cb780a93.js.map"
+    "main.6086dd1c.css.map": "/site/static/css/main.6086dd1c.css.map",
+    "main.3657f2f2.js.map": "/site/static/js/main.3657f2f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f66571b8.css",
-    "static/js/main.cb780a93.js"
+    "static/css/main.6086dd1c.css",
+    "static/js/main.3657f2f2.js"
   ]
 }
