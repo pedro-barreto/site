@@ -35,7 +35,7 @@ export default function Header() {
       }`}
     >
       <Link
-        to="/site"
+        to="/"
         className={`justify-center py-3 h-28 col-span-6 sm:col-span-2 ${
           hamb ? "hidden" : "flex"
         }`}
@@ -66,7 +66,7 @@ export default function Header() {
           {hamb ? <CgClose className="text-8xl" /> : <GiHamburgerMenu />}
         </div>
         <Link
-          to="/site"
+          to="/"
           className={linkNav}
           onClick={() => {
             setHamb(false);
@@ -75,7 +75,7 @@ export default function Header() {
         >
           <Routes>
             <Route
-              path="/site/"
+              path="/"
               element={<span className={markRoutes}>HOME</span>}
             ></Route>
             <Route path="*" element="HOME"></Route>
@@ -83,7 +83,7 @@ export default function Header() {
         </Link>
 
         <Link
-          to="/site/animes"
+          to="/animes"
           className={linkNav}
           onClick={() => {
             setHamb(false);
@@ -92,7 +92,7 @@ export default function Header() {
         >
           <Routes>
             <Route
-              path="/site/animes"
+              path="/animes"
               element={<span className={markRoutes}>ANIMES</span>}
             ></Route>
             <Route path="*" element="ANIMES"></Route>
@@ -100,7 +100,7 @@ export default function Header() {
         </Link>
 
         <Link
-          to="/site/artes"
+          to="/artes"
           className={linkNav}
           onClick={() => {
             setHamb(false);
@@ -109,7 +109,7 @@ export default function Header() {
         >
           <Routes>
             <Route
-              path="/site/artes"
+              path="/artes"
               element={<span className={markRoutes}>ARTES</span>}
             ></Route>
             <Route path="*" element="ARTES"></Route>
@@ -117,7 +117,7 @@ export default function Header() {
         </Link>
 
         <Link
-          to="/site/sobre"
+          to="/sobre"
           className={linkNav}
           onClick={() => {
             setHamb(false);
@@ -126,7 +126,7 @@ export default function Header() {
         >
           <Routes>
             <Route
-              path="/site/sobre"
+              path="/sobre"
               element={<span className={markRoutes}>SOBRE</span>}
             ></Route>
             <Route path="*" element="SOBRE"></Route>
