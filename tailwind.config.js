@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+const flowbite = require("flowbite-react/tailwind");
+
 module.exports = {
   darkMode: "class",
-  plugins: [require("flowbite/plugin")],
-  content: [
-    "./src/**/*.{js,jsx}",
-    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
-  ],
+  plugins: [flowbite.plugin()],
+  content: ["./src/**/*.{js,jsx}", flowbite.content()],
   theme: {
     extend: {
       backgroundImage: {
@@ -35,8 +34,8 @@ module.exports = {
       maxHeight: {
         fmh: "calc(100vh - 7rem)",
       },
-      maxWidth:{
-        card: "250px"
+      maxWidth: {
+        card: "250px",
       },
       minHeight: {
         "screen/2": "50vh",

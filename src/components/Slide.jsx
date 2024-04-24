@@ -8,7 +8,7 @@ import { Carousel } from "flowbite-react";
 export default function Slide() {
   return (
     <div className="h-fmh bg-gray-600">
-      <Carousel slideInterval={5000} indicators={false}>
+      <Carousel slideInterval={5000}>
         <img src={slide1} alt="Slide" className="max object-cover" />
         <img src={slide2} alt="Slide" className="max object-cover" />
         <img src={slide3} alt="Slide" className="max object-cover" />

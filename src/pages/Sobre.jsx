@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import FaleConosco from "../components/FaleConosco";
 
 export default function Sobre() {
   const linkStyle =
@@ -69,7 +68,6 @@ export default function Sobre() {
           </div>
         </div>
       </div>
-      <FaleConosco />
     </div>
   );
 }
