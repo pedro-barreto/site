@@ -3,7 +3,7 @@ import React from "react";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Artes from "./pages/Artes";
-import Animes from "./pages/Animes";
+import Animes from "./pages/Animes/Animes";
 import ReactDOM from "react-dom/client";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
