@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function Informacao({ titulo, paragrafo, foto, row }) {
   return (
     <div
@@ -33,3 +35,10 @@ export default function Informacao({ titulo, paragrafo, foto, row }) {
     </div>
   );
 }
+
+Informacao.propTypes = {
+  titulo: PropTypes.string.isRequired,
+  paragrafo: PropTypes.string.isRequired,
+  foto: PropTypes.string.isRequired,
+  row: PropTypes.bool.isRequired,
+};

@@ -3,7 +3,8 @@ import React from "react";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Artes from "./pages/Artes";
-import Animes from "./pages/Animes/Animes";
+import Obras from "./pages/Obras/Obras";
+import DetalhesObra from "./pages/Obras/DetalhesObra";
 import ReactDOM from "react-dom/client";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
@@ -17,7 +18,8 @@ root.render(
     <main>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/animes" element={<Animes />} />
+        <Route path="/obras" element={<Obras />} />
+        <Route path="/obras/:id" element={<DetalhesObra />} />
         <Route path="/artes" element={<Artes />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="*" element={<NotFound />} />

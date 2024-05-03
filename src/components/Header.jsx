@@ -2,24 +2,25 @@ import { Routes, Route, Link } from "react-router-dom";
 import Logo from "../img/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgClose } from "react-icons/cg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 
 export default function Header() {
   const [hamb, setHamb] = useState(false);
   const [dark, setDark] = useState(false);
 
-  var corpo = document.body;
-
   const handleClick = () => {
     setHamb(!hamb);
   };
 
-  hamb
-    ? (corpo.style.overflowY = "hidden")
-    : (corpo.style.overflowY = "scroll");
+  useEffect(() => {
+    const corpo = document.body;
+    const scroll = hamb ? "hidden" : "scroll";
+    const theme = dark ? "dark" : "light";
 
-  dark ? (corpo.className = "dark") : (corpo.className = "light");
+    corpo.style.overflowY = scroll;
+    corpo.className = theme;
+  }, [hamb, dark]);
 
   const linkNav = `max group sm:grid place-items-center transition duration-300 hover:text-gray-200 hover:bg-gray-400 dark:hover:bg-gray-500 ${
     hamb ? "grid" : "hidden"
@@ -54,7 +55,7 @@ export default function Header() {
           hamb ? "flex-col" : "flex"
         }`}
       >
-        <div
+        <button
           id="hamburguer"
           className={`max grid place-items-center text-6xl sm:hidden cursor-pointer ${
             hamb
@@ -64,7 +65,7 @@ export default function Header() {
           onClick={() => handleClick()}
         >
           {hamb ? <CgClose className="text-8xl" /> : <GiHamburgerMenu />}
-        </div>
+        </button>
         <Link
           to="/"
           className={linkNav}
@@ -83,7 +84,7 @@ export default function Header() {
         </Link>
 
         <Link
-          to="/animes"
+          to="/obras"
           className={linkNav}
           onClick={() => {
             setHamb(false);
@@ -92,10 +93,10 @@ export default function Header() {
         >
           <Routes>
             <Route
-              path="/animes"
-              element={<span className={markRoutes}>ANIMES</span>}
+              path="/obras"
+              element={<span className={markRoutes}>OBRAS</span>}
             ></Route>
-            <Route path="*" element="ANIMES"></Route>
+            <Route path="*" element="OBRAS"></Route>
           </Routes>
         </Link>
 
@@ -132,8 +133,8 @@ export default function Header() {
             <Route path="*" element="SOBRE"></Route>
           </Routes>
         </Link>
-        <div
-          className={`max flex items-center hover:text-gray-200 hover:bg-gray-500 transition duration-300 cursor-pointer p-1 ${
+        <button
+          className={`max flex items-center hover:text-gray-200 hover:bg-gray-400 dark:hover:bg-gray-500 transition duration-300 cursor-pointer p-1 ${
             hamb ? "" : "hidden"
           } sm:flex`}
           onClick={() => setDark(!dark)}
@@ -151,7 +152,7 @@ export default function Header() {
               </>
             )}
           </div>
-        </div>
+        </button>
       </nav>
     </header>
   );

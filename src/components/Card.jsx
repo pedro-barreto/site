@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
+import PropTypes from "prop-types";
 
 export default function Card({ titulo, texto, imagem }) {
   const [card, setCard] = useState(false);
@@ -9,14 +10,14 @@ export default function Card({ titulo, texto, imagem }) {
   };
 
   return (
-    <div
-      className="max-w-card h-fit m-5 bg-cor5 rounded-xl overflow-hidden cursor-pointer shadow-xl border border-black black:border-white dark:bg-red-900"
-      onClick={() => handleClick()}
-    >
+    <article className="max-w-card h-fit m-5 bg-cor5 rounded-xl overflow-hidden shadow-xl border border-black black:border-white dark:bg-red-900">
       <img className="w-full aspect-square object-cover" src={imagem} alt="" />
 
       <div className="p-2 sm:p-5 h-auto text-gray-300">
-        <div className="flex justify-center items-center space-x-1">
+        <button
+          className="flex justify-center items-center w-full space-x-1"
+          onClick={handleClick}
+        >
           {card ? (
             <FiArrowUp className="text-xl sm:text-2xl" />
           ) : (
@@ -24,11 +25,17 @@ export default function Card({ titulo, texto, imagem }) {
           )}
 
           <h5 className="text-lg sm:text-xl font-bold">{titulo}</h5>
-        </div>
+        </button>
         <p className={card ? "text-center text-sm sm:text-base p-2" : "hidden"}>
           {texto}
         </p>
       </div>
-    </div>
+    </article>
   );
 }
+
+Card.propTypes = {
+  titulo: PropTypes.string.isRequired,
+  texto: PropTypes.string.isRequired,
+  imagem: PropTypes.string.isRequired,
+};

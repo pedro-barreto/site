@@ -29,19 +29,19 @@ export default function Acessorios() {
 
       <section className={secao}>
         <div className="row-span-2 col-span-6 border-2 border-black">
-          <img src={arte01} className={styleImg} alt="" loading="lazy" />
+          <img src={arte01} className={styleImg} alt="" />
         </div>
         <div className="row-span-6 col-span-6 border-2 border-black">
-          <img src={arte02} className={styleImg} alt="" loading="lazy" />
+          <img src={arte02} className={styleImg} alt="" />
         </div>
         <div className="row-span-4 col-span-3 border-2 border-black">
-          <img src={arte03} className={styleImg} alt="" loading="lazy" />
+          <img src={arte03} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-3 border-2 border-black">
-          <img src={arte04} className={styleImg} alt="" loading="lazy" />
+          <img src={arte04} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-3 border-2 border-black">
-          <img src={arte05} className={styleImg} alt="" loading="lazy" />
+          <img src={arte05} className={styleImg} alt="" />
         </div>
       </section>
 
@@ -49,22 +49,22 @@ export default function Acessorios() {
 
       <section className={secao}>
         <div className="row-span-4 col-span-8 border-2 border-black">
-          <img src={arte06} className={styleImg} alt="" loading="lazy" />
+          <img src={arte06} className={styleImg} alt="" />
         </div>
         <div className="row-span-4 col-span-4 border-2 border-black">
-          <img src={arte07} className={styleImg} alt="" loading="lazy" />
+          <img src={arte07} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-3 border-2 border-black">
-          <img src={arte08} className={styleImg} alt="" loading="lazy" />
+          <img src={arte08} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-3 border-2 border-black ">
-          <img src={arte09} className={styleImg} alt="" loading="lazy" />
+          <img src={arte09} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-3 border-2 border-black">
-          <img src={arte10} className={styleImg} alt="" loading="lazy" />
+          <img src={arte10} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-3 border-2 border-black">
-          <img src={arte11} className={styleImg} alt="" loading="lazy" />
+          <img src={arte11} className={styleImg} alt="" />
         </div>
       </section>
 
@@ -72,22 +72,22 @@ export default function Acessorios() {
 
       <section className={secao}>
         <div className="row-span-3 col-span-3 border-2 border-black">
-          <img src={arte12} className={styleImg} alt="" loading="lazy" />
+          <img src={arte12} className={styleImg} alt="" />
         </div>
         <div className="row-span-6 col-span-3 border-2 border-black">
-          <img src={arte13} className={styleImg} alt="" loading="lazy" />
+          <img src={arte13} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-6 border-2 border-black">
-          <img src={arte14} className={styleImg} alt="" loading="lazy" />
+          <img src={arte14} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-6 border-2 border-black">
-          <img src={arte15} className={styleImg} alt="" loading="lazy" />
+          <img src={arte15} className={styleImg} alt="" />
         </div>
         <div className="row-span-3 col-span-3 border-2 border-black">
-          <img src={arte16} className={styleImg} alt="" loading="lazy" />
+          <img src={arte16} className={styleImg} alt="" />
         </div>
         <div className="row-span-2 col-span-6 border-2 border-black">
-          <img src={arte17} className={styleImg} alt="" loading="lazy" />
+          <img src={arte17} className={styleImg} alt="" />
         </div>
       </section>
     </div>

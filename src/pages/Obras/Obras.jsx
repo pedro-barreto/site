@@ -1,10 +1,10 @@
-import CardAnime from "../../components/CardAnime.jsx";
-import { dbAnimes } from "./dbAnimes.jsx";
+import CardObras from "../../components/CardObras.jsx";
+import { dbObras } from "./dbObras.jsx";
 
 import { Pagination } from "flowbite-react";
 import { useState } from "react";
 
-export default function Jogos() {
+export default function Obras() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectChange, setSelectChange] = useState("default");
 
@@ -17,28 +17,29 @@ export default function Jogos() {
     setSelectChange(event.target.value);
   };
 
-  const sortedAnimes = [...dbAnimes].sort((a, b) => {
-    if (selectChange === "default") {
-      return a;
-    } else if (selectChange === "dataAntigo") {
+  const sortedObras = [...dbObras].sort((a, b) => {
+    if (selectChange === "dataAntigo") {
       return a.info.data - b.info.data;
-    } else if (selectChange === "dataNovo") {
-      return b.info.data - a.info.data;
-    } else if (selectChange === "notaMelhor") {
-      return b.info.avaliacao - a.info.avaliacao;
-    } else if (selectChange === "notaPior") {
-      return a.info.avaliacao - b.info.avaliacao;
-    } else {
-      return a;
     }
+    if (selectChange === "dataNovo") {
+      return b.info.data - a.info.data;
+    }
+    if (selectChange === "notaMelhor") {
+      return b.info.avaliacao - a.info.avaliacao;
+    }
+    if (selectChange === "notaPior") {
+      return a.info.avaliacao - b.info.avaliacao;
+    }
+
+    return a + b;
   });
 
-  const exibicao = sortedAnimes.slice((currentPage - 1) * 8, currentPage * 8);
+  const exibicao = sortedObras.slice((currentPage - 1) * 8, currentPage * 8);
 
   return (
-    <div className="flex flex-col justify-center items-center bg-cor4-100 dark:bg-gray-600">
+    <main className="flex flex-col justify-center items-center bg-cor4-100 dark:bg-gray-600">
       <h1 className="font-bold text-4xl sm:text-5xl py-14 font-nippo dark:text-gray-100">
-        ANIMES
+        Obras
       </h1>
 
       <select name="Ordenar" value={selectChange} onChange={onOrder}>
@@ -49,14 +50,16 @@ export default function Jogos() {
         <option value="notaPior">nota (piores) </option>
       </select>
 
-      <div className="flex flex-wrap justify-evenly p-5 sm:p-0">
+      <div className="w-full flex flex-wrap justify-evenly p-5 sm:p-0">
         {exibicao.map((index, key) => (
-          <CardAnime
-            key={key}
+          <CardObras
+            key={index.id}
+            id={index.id}
             titulo={index.titulo}
             foto={index.foto}
             sinopse={index.sinopse}
             info={index.info}
+            data={index.info.data}
           />
         ))}
       </div>
@@ -64,13 +67,13 @@ export default function Jogos() {
         <Pagination
           layout="pagination"
           currentPage={currentPage}
-          totalPages={dbAnimes.length / 8}
+          totalPages={Math.ceil(dbObras.length / 8)}
           onPageChange={onPageChange}
           previousLabel="Voltar"
           nextLabel="Próximo"
           showIcons
         />
       </div>
-    </div>
+    </main>
   );
 }
