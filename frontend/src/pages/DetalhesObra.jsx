@@ -3,15 +3,12 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 export default function DetalhesObra() {
-  const baseURL = "https://site-ghibli-backend.vercel.app:3001";
-  window.scrollTo(0, 0);
-
   const { id } = useParams();
   const [obra, setObra] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`${baseURL}/${id}`)
+      .get(`${process.env.REACT_APP_BASE_URL}/obras/${id}`)
       .then((res) => setObra(res.data[0]))
       .catch((err) => console.log(err));
   }, [id]);

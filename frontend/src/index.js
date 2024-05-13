@@ -3,13 +3,13 @@ import React from "react";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Artes from "./pages/Artes";
-import Obras from "./pages/Obras/Obras";
-import DetalhesObra from "./pages/Obras/DetalhesObra";
+import Obras from "./pages/Obras";
 import ReactDOM from "react-dom/client";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Cadastrar from "./pages/Cadastrar";
+import DetalhesObra from "./pages/DetalhesObra";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

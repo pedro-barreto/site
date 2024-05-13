@@ -3,7 +3,6 @@ import { useState } from "react";
 import CardObras from "../components/CardObras";
 
 export default function Cadastrar() {
-  const baseURL = "https://site-ghibli-backend.vercel.app:3001";
   const [values, setValues] = useState({
     nome: "",
     sinopse: "",
@@ -24,7 +23,7 @@ export default function Cadastrar() {
     formData.append("avaliacao", values.avaliacao);
     formData.append("imagem", values.imagem);
 
-    await axios.post(`${baseURL}/cadastrar-obra`, formData, {
+    await axios.post(`${process.env.REACT_APP_BASE_URL}/cadastrar-obra`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },

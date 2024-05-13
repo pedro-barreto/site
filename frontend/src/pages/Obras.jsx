@@ -1,11 +1,10 @@
 import axios from "axios";
-import CardObras from "../../components/CardObras.jsx";
+import CardObras from "../components/CardObras.jsx";
 import { Link } from "react-router-dom";
 import { Pagination } from "flowbite-react";
 import { useEffect, useState } from "react";
 
 export default function Obras() {
-  const baseURL = "https://site-ghibli-backend.vercel.app:3001";
   const [currentPage, setCurrentPage] = useState(1);
   const [obras, setObras] = useState([]);
 
@@ -16,7 +15,7 @@ export default function Obras() {
 
   useEffect(() => {
     axios
-      .get(`${baseURL}/`)
+      .get(`${process.env.REACT_APP_BASE_URL}/`)
       .then((res) => setObras(res.data))
       .catch((err) => console.log(err));
   }, []);
