@@ -1,27 +1,42 @@
 import axios from "axios";
 import CardObras from "../components/CardObras.jsx";
+import { Paginator } from "primereact/paginator";
+import { useEffect, useRef, useState } from "react";
+import { Toast } from "primereact/toast";
 import { Link } from "react-router-dom";
-import { Pagination } from "flowbite-react";
-import { useEffect, useState } from "react";
 
 export default function Obras() {
-  const [currentPage, setCurrentPage] = useState(1);
+  const toast = useRef(null);
+  const [page, setPage] = useState(0);
   const [obras, setObras] = useState([]);
 
-  const onPageChange = (page) => {
-    setCurrentPage(page);
+  const onPageChange = (event) => {
+    setPage(event.page);
     window.scrollTo(0, 0);
+  };
+
+  const showError = (error) => {
+    toast.current.show({
+      severity: "error",
+      summary: "Erro ao listar obras",
+      detail: `Erro: ${error.message}`,
+      life: 3000,
+    });
   };
 
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_BASE_URL}/`)
       .then((res) => setObras(res.data))
-      .catch((err) => console.log(err));
+      .catch((err) => showError(err));
   }, []);
 
+  const exibicao = obras.slice(page * 8, (page + 1) * 8);
+
   return (
-    <main className="flex flex-col justify-center items-center bg-cor4-100 dark:bg-gray-600">
+    <main className="flex flex-col items-center bg-cor4-100 dark:bg-gray-600 pb-10">
+      <Toast ref={toast} />
+
       <h1 className="font-bold text-4xl sm:text-5xl py-14 font-nippo dark:text-gray-100">
         Obras
       </h1>
@@ -34,7 +49,7 @@ export default function Obras() {
       </Link>
 
       <div className="w-full flex flex-wrap justify-evenly p-5 sm:p-0">
-        {obras.map((obra) => (
+        {exibicao.map((obra) => (
           <CardObras
             key={obra.id}
             id={obra.id}
@@ -49,17 +64,17 @@ export default function Obras() {
           />
         ))}
       </div>
-      <div className="flex overflow-x-auto sm:justify-center mb-10">
-        <Pagination
-          layout="pagination"
-          currentPage={currentPage}
-          totalPages={Math.ceil(obras.length / 8)}
-          onPageChange={onPageChange}
-          previousLabel="Voltar"
-          nextLabel="Próximo"
-          showIcons
-        />
-      </div>
+      {obras.length > 8 && (
+        <div className="flex overflow-x-auto sm:justify-center">
+          <Paginator
+            first={page}
+            rows={1}
+            totalRecords={Math.ceil(obras.length / 8)}
+            onPageChange={onPageChange}
+            className="dark:bg-gray-800 dark:text-white"
+          />
+        </div>
+      )}
     </main>
   );
 }

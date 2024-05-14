@@ -1,20 +1,20 @@
-import arte01 from "./grid01.jpg"; //600x200
-import arte02 from "./grid02.jpg"; //600x600
-import arte03 from "./grid03.jpg"; //300x400
-import arte04 from "./grid04.jpg"; //300x200
-import arte05 from "./grid05.jpg"; //300x200
-import arte06 from "./grid06.jpg"; //800x400
-import arte07 from "./grid07.jpg"; //400x400
-import arte08 from "./grid08.jpg"; //300x200
-import arte09 from "./grid09.jpg"; //300x200
-import arte10 from "./grid10.jpg"; //300x200
-import arte11 from "./grid11.jpg"; //300x200
-import arte12 from "./grid12.jpg"; //300x300
-import arte13 from "./grid13.jpg"; //300x600
-import arte14 from "./grid14.jpg"; //600x200
-import arte15 from "./grid15.jpg"; //600x200
-import arte16 from "./grid16.jpg"; //300x300
-import arte17 from "./grid17.jpg"; //600x200
+import arte01 from "./grid01.webp"; //600x200
+import arte02 from "./grid02.webp"; //600x600
+import arte03 from "./grid03.webp"; //300x400
+import arte04 from "./grid04.webp"; //300x200
+import arte05 from "./grid05.webp"; //300x200
+import arte06 from "./grid06.webp"; //800x400
+import arte07 from "./grid07.webp"; //400x400
+import arte08 from "./grid08.webp"; //300x200
+import arte09 from "./grid09.webp"; //300x200
+import arte10 from "./grid10.webp"; //300x200
+import arte11 from "./grid11.webp"; //300x200
+import arte12 from "./grid12.webp"; //300x300
+import arte13 from "./grid13.webp"; //300x600
+import arte14 from "./grid14.webp"; //600x200
+import arte15 from "./grid15.webp"; //600x200
+import arte16 from "./grid16.webp"; //300x300
+import arte17 from "./grid17.webp"; //600x200
 
 const artes = [
   arte01,

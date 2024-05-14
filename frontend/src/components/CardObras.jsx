@@ -12,6 +12,7 @@ export default function CardObras({
   duracao,
   data,
   avaliacao,
+  disabled,
 }) {
   const [openCard, setOpenCard] = useState(false);
 
@@ -26,8 +27,10 @@ export default function CardObras({
       </h1>
 
       <Link
-        to={`${id}`}
-        className="flex justify-center py-2 w-full"
+        to={!disabled && `${id}`}
+        className={
+          !disabled ? "flex justify-center py-2 w-full" : "cursor-default"
+        }
         style={{ height: "300px" }}
       >
         <img
@@ -43,7 +46,8 @@ export default function CardObras({
           {`${Math.floor(duracao / 60)}h ${duracao % 60}m`}
         </span>
         <span className="flex items-center gap-1">
-          <BsCalendarDateFill /> {new Date(data).getFullYear()}
+          <BsCalendarDateFill />
+          {data !== "" ? new Date(data).getFullYear() : "0"}
         </span>
         <span className="flex items-center gap-1">
           <FaStar /> {`${avaliacao} / 10`}

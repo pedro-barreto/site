@@ -1,8 +1,10 @@
 import axios from "axios";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import CardObras from "../components/CardObras";
+import { Toast } from "primereact/toast";
 
 export default function Cadastrar() {
+  const toast = useRef(null);
   const [values, setValues] = useState({
     nome: "",
     sinopse: "",
@@ -11,6 +13,33 @@ export default function Cadastrar() {
     avaliacao: 0,
     imagem: null,
   });
+
+  const showSuccess = () => {
+    toast.current.show({
+      severity: "success",
+      summary: "Sucesso",
+      detail: "Obra cadastrada com sucesso!",
+      life: 3000,
+    });
+
+    setValues({
+      nome: "",
+      sinopse: "",
+      duracao: 0,
+      data: "",
+      avaliacao: 0,
+      imagem: null,
+    });
+  };
+
+  const showError = (error) => {
+    toast.current.show({
+      severity: "error",
+      summary: "Erro ao cadastrar obra",
+      detail: `Erro: ${error.message}`,
+      life: 3000,
+    });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,18 +52,22 @@ export default function Cadastrar() {
     formData.append("avaliacao", values.avaliacao);
     formData.append("imagem", values.imagem);
 
-    await axios.post(`${process.env.REACT_APP_BASE_URL}/cadastrar-obra`, formData, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    });
+    await axios
+      .post(`${process.env.REACT_APP_BASE_URL}/cadastrar-obra`, formData, {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      })
+      .then(showSuccess)
+      .catch((err) => showError(err));
   };
 
   return (
-    <main className="flex justify-around p-10">
+    <main className="bg-cor3 flex flex-col lg:flex-row justify-evenly items-center p-10 dark:bg-gray-600 dark:text-white">
+      <Toast ref={toast} />
       <form
         onSubmit={handleSubmit}
-        className="bg-white border border-black px-5"
+        className="bg-white border dark:form border-black px-5 dark:bg-gray-700"
       >
         <h1 className="block text-center font-nippo text-2xl mt-5">
           Cadastrar Obra
@@ -46,7 +79,8 @@ export default function Cadastrar() {
             name="nome"
             id="nome"
             onChange={(e) => setValues({ ...values, nome: e.target.value })}
-            values={values.nome}
+            value={values.nome}
+            className="dark:text-black"
             required
           />
         </div>
@@ -57,7 +91,8 @@ export default function Cadastrar() {
             name="sinopse"
             id="sinopse"
             onChange={(e) => setValues({ ...values, sinopse: e.target.value })}
-            values={values.sinopse}
+            value={values.sinopse}
+            className="dark:text-black"
             required
           />
         </div>
@@ -70,7 +105,6 @@ export default function Cadastrar() {
             onChange={(e) => {
               setValues({ ...values, imagem: e.target.files[0] });
             }}
-            values={values.imagem}
             required
           />
         </div>
@@ -82,7 +116,8 @@ export default function Cadastrar() {
             name="duracao"
             id="duracao"
             onChange={(e) => setValues({ ...values, duracao: e.target.value })}
-            values={values.duracao}
+            value={values.duracao}
+            className="dark:text-black"
             required
           />
         </div>
@@ -93,7 +128,8 @@ export default function Cadastrar() {
             name="data"
             id="data"
             onChange={(e) => setValues({ ...values, data: e.target.value })}
-            values={values.data}
+            value={values.data}
+            className="dark:text-black"
             required
           />
         </div>
@@ -109,12 +145,14 @@ export default function Cadastrar() {
             onChange={(e) =>
               setValues({ ...values, avaliacao: e.target.value })
             }
-            values={values.avaliacao}
+            value={values.avaliacao}
+            className="dark:text-black"
+            required
           />
         </div>
         <button
           type="submit"
-          className="bg-cor5 text-white block m-auto w-full py-3 mt-5 mb-10 rounded-lg"
+          className="bg-cor5 text-white font-bold block m-auto w-full py-3 mt-5 mb-10 rounded-lg dark:bg-red-900"
         >
           Cadastrar
         </button>
@@ -131,6 +169,7 @@ export default function Cadastrar() {
         duracao={values.duracao ? values.duracao : 0}
         data={values.data ?? "1985"}
         avaliacao={values.avaliacao ? values.avaliacao : 0}
+        disabled={true}
       />
     </main>
   );
