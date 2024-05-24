@@ -15,7 +15,7 @@ export default function Card({ titulo, texto, imagem }) {
 
       <div className="p-2 sm:p-5 h-auto text-white">
         <button
-          className="flex items-center w-full space-x-1"
+          className="flex items-center justify-between w-full"
           onClick={handleClick}
         >
           <h5 className="text-lg sm:text-xl font-bold">{titulo}</h5>
