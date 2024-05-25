@@ -37,6 +37,7 @@ export default function CardObras({
           src={foto}
           alt={`capa do anime ${titulo}`}
           className="w-full h-full object-cover"
+          loading="lazy"
         />
       </Link>
 

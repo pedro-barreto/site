@@ -9,7 +9,16 @@ const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
 const app = express();
-app.use(cors());
+
+app.use(
+  cors({
+    origin: process.env.ORIGIN,
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
+    allowedHeaders: "Content-Type, Authorization",
+  })
+);
+
 app.use(express.json());
 
 const db = mysql.createConnection({

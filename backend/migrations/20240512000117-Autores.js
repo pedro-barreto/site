@@ -31,7 +31,7 @@ module.exports = {
         allowNull: false,
       },
       imagem: {
-        type: Sequelize.BLOB,
+        type: Sequelize.BLOB('long'),
         allowNull: false,
       },
     });

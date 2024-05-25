@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("obras", {
+    await queryInterface.createTable("personagens", {
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -14,20 +14,24 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      sinopse: {
+      sobre: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      duracao: {
+      raca: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      genero: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      sexo: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      idade: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      data: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
-      avaliacao: {
-        type: Sequelize.FLOAT,
         allowNull: false,
       },
       imagem: {
@@ -38,6 +42,6 @@ module.exports = {
   },
 
   async down(queryInterface) {
-    await queryInterface.dropTable("obras");
+    await queryInterface.dropTable("users");
   },
 };
