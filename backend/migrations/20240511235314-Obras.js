@@ -1,6 +1,5 @@
 "use strict";
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable("obras", {
@@ -15,7 +14,7 @@ module.exports = {
         allowNull: false,
       },
       sinopse: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(535),
         allowNull: false,
       },
       duracao: {
@@ -31,7 +30,7 @@ module.exports = {
         allowNull: false,
       },
       imagem: {
-        type: Sequelize.BLOB('long'),
+        type: Sequelize.BLOB("long"),
         allowNull: false,
       },
     });

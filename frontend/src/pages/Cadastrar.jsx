@@ -63,11 +63,11 @@ export default function Cadastrar() {
   };
 
   return (
-    <main className="bg-cor3 flex flex-col lg:flex-row justify-evenly items-center p-10 dark:bg-gray-600 dark:text-white">
+    <main className="bg-cor3 flex flex-col lg:flex-row justify-evenly items-center p-2 sm:p-10 dark:bg-gray-600 dark:text-white">
       <Toast ref={toast} />
       <form
         onSubmit={handleSubmit}
-        className="bg-white border dark:form border-black px-5 dark:bg-gray-700"
+        className="w-full max-w-lg bg-white border dark:form border-black px-5 dark:bg-gray-700"
       >
         <h1 className="block text-center font-nippo text-2xl mt-5">
           Cadastrar Obra
@@ -79,7 +79,6 @@ export default function Cadastrar() {
             name="nome"
             id="nome"
             onChange={(e) => setValues({ ...values, nome: e.target.value })}
-            value={values.nome}
             className="dark:text-black"
             required
           />
@@ -91,7 +90,6 @@ export default function Cadastrar() {
             name="sinopse"
             id="sinopse"
             onChange={(e) => setValues({ ...values, sinopse: e.target.value })}
-            value={values.sinopse}
             className="dark:text-black"
             required
           />
@@ -116,7 +114,6 @@ export default function Cadastrar() {
             name="duracao"
             id="duracao"
             onChange={(e) => setValues({ ...values, duracao: e.target.value })}
-            value={values.duracao}
             className="dark:text-black"
             required
           />
@@ -128,7 +125,6 @@ export default function Cadastrar() {
             name="data"
             id="data"
             onChange={(e) => setValues({ ...values, data: e.target.value })}
-            value={values.data}
             className="dark:text-black"
             required
           />
@@ -145,7 +141,6 @@ export default function Cadastrar() {
             onChange={(e) =>
               setValues({ ...values, avaliacao: e.target.value })
             }
-            value={values.avaliacao}
             className="dark:text-black"
             required
           />
