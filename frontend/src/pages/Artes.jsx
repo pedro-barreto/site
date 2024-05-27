@@ -13,19 +13,34 @@ export default function Acessorios() {
       <h1 className={titulo}>ARTE 1</h1>
 
       <section className={secao}>
-        <div className="row-span-2 col-span-6 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-6 border-2 border-black"
+        >
           <Image src={artes[0]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-6 col-span-6 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-6 col-span-6 border-2 border-black"
+        >
           <Image src={artes[1]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-4 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-4 col-span-3 border-2 border-black"
+        >
           <Image src={artes[2]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-3 border-2 border-black"
+        >
           <Image src={artes[3]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-3 border-2 border-black"
+        >
           <Image src={artes[4]} className={styleImg} alt="" preview />
         </div>
       </section>
@@ -33,22 +48,40 @@ export default function Acessorios() {
       <h1 className={titulo}>ARTE 2</h1>
 
       <section className={secao}>
-        <div className="row-span-4 col-span-8 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-4 col-span-8 border-2 border-black"
+        >
           <Image src={artes[5]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-4 col-span-4 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-4 col-span-4 border-2 border-black"
+        >
           <Image src={artes[6]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-3 border-2 border-black"
+        >
           <Image src={artes[7]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-3 border-2 border-black ">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-3 border-2 border-black "
+        >
           <Image src={artes[8]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-3 border-2 border-black"
+        >
           <Image src={artes[9]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-3 border-2 border-black"
+        >
           <Image src={artes[10]} className={styleImg} alt="" preview />
         </div>
       </section>
@@ -56,22 +89,40 @@ export default function Acessorios() {
       <h1 className={titulo}>ARTE 3</h1>
 
       <section className={secao}>
-        <div className="row-span-3 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-3 col-span-3 border-2 border-black"
+        >
           <Image src={artes[11]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-6 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-6 col-span-3 border-2 border-black"
+        >
           <Image src={artes[12]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-6 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-6 border-2 border-black"
+        >
           <Image src={artes[13]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-6 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-6 border-2 border-black"
+        >
           <Image src={artes[14]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-3 col-span-3 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-3 col-span-3 border-2 border-black"
+        >
           <Image src={artes[15]} className={styleImg} alt="" preview />
         </div>
-        <div className="row-span-2 col-span-6 border-2 border-black">
+        <div
+          data-aos="zoom-in"
+          className="row-span-2 col-span-6 border-2 border-black"
+        >
           <Image src={artes[16]} className={styleImg} alt="" preview />
         </div>
       </section>

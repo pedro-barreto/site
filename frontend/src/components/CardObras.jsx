@@ -21,16 +21,20 @@ export default function CardObras({
   };
 
   return (
-    <article className="w-72 h-fit bg-cor5 p-4 pt-2 my-5 rounded-xl border border-black dark:border-white dark:bg-red-900">
+    <article
+      data-aos="zoom-in"
+      className="w-72 h-fit bg-cor5 p-4 pt-2 my-5 rounded-xl border border-black dark:border-white dark:bg-red-900"
+    >
       <h1 className="h-24 grid place-content-center text-center text-2xl font-black my-2 p-5 bg-gray-100 text-black rounded-t-lg dark:bg-gray-700 dark:text-gray-100">
         {titulo}
       </h1>
 
       <Link
         to={!disabled && `${id}`}
-        className={
-          !disabled ? "flex justify-center py-2 w-full" : "cursor-default"
-        }
+        className={`
+          flex justify-center py-2 w-full
+          ${disabled && "cursor-default"}
+        `}
         style={{ height: "300px" }}
       >
         <img

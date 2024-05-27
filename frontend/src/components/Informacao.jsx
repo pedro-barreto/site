@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-
 export default function Informacao({ titulo, paragrafo, foto, row }) {
   return (
-    <div
-      className={`flex flex-col-reverse bg-gray-200 rounded-2xl mx-5 sm:mx-14 overflow-hidden border border-black dark:bg-gray-700 dark:border-white ${
+    <section
+      data-aos={"fade-right"}
+      className={`flex flex-col-reverse bg-gray-200 rounded-2xl mx-5 sm:mx-14 border border-black dark:bg-gray-700 dark:border-white ${
         row ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
@@ -28,11 +28,10 @@ export default function Informacao({ titulo, paragrafo, foto, row }) {
         <img
           src={foto}
           alt="Imagem"
-          loading="lazy"
           className="transition duration-300 hover:scale-150"
         />
       </div>
-    </div>
+    </section>
   );
 }
 

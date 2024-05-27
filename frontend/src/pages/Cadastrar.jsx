@@ -66,6 +66,7 @@ export default function Cadastrar() {
     <main className="bg-cor3 flex flex-col lg:flex-row justify-evenly items-center p-2 sm:p-10 dark:bg-gray-600 dark:text-white">
       <Toast ref={toast} />
       <form
+        data-aos="zoom-in"
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-white border dark:form border-black px-5 dark:bg-gray-700"
       >

@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import { FiArrowDown, FiArrowUp } from "react-icons/fi";
-import PropTypes from "prop-types";
 
 export default function Card({ titulo, texto, imagem }) {
   const [card, setCard] = useState(false);
@@ -10,7 +10,10 @@ export default function Card({ titulo, texto, imagem }) {
   };
 
   return (
-    <article className="max-w-card h-fit m-5 bg-cor5 rounded-xl overflow-hidden shadow-xl border border-black black:border-white dark:bg-red-900">
+    <article
+      data-aos="fade-up"
+      className="max-w-card h-fit m-5 bg-cor5 rounded-xl shadow-xl border border-black black:border-white dark:bg-red-900"
+    >
       <img className="w-full aspect-square object-cover" src={imagem} alt="" />
 
       <div className="p-2 sm:p-5 h-auto text-white">

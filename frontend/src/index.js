@@ -1,5 +1,5 @@
 import "./index.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./pages/Home";
 import Sobre from "./pages/Sobre";
 import Artes from "./pages/Artes";
@@ -11,10 +11,13 @@ import Footer from "./components/Footer";
 import Cadastrar from "./pages/Cadastrar";
 import DetalhesObra from "./pages/DetalhesObra";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
+    <RenderAOS />
     <Header />
     <main>
       <Routes>
@@ -30,3 +33,10 @@ root.render(
     <Footer />
   </BrowserRouter>
 );
+
+function RenderAOS() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+}
